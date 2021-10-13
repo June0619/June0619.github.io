@@ -9,6 +9,8 @@ tags:
 last_modified_at: 2021-10-13
 ---
 
-github.io first posting
+Hello Github.io
+
+첫 포스팅 입니다.
 
 title : {{ page.title }}
