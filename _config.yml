@@ -16,15 +16,15 @@ minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Control Myself"
+title                    : "To Be Better Than Yesterday"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "June0619"
-description              : "결심보다는 행동을"
+description              : "더 나은 내일을 위해"
 url                      : "https://June0619.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
-teaser                   : "/assets/images/bio-photo-jibuntsukomikuma.jpg"
+teaser                   : "/assets/images/jwjung_character.jpg"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
@@ -83,7 +83,7 @@ facebook:
   username               :
   app_id                 :
   publisher              :
-og_image                 : "/assets/images/bio-photo-jibuntsukomikuma.jpg"
+og_image                 : "/assets/images/jwjung_character.jpg"
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
@@ -101,8 +101,8 @@ analytics:
 
 # Site Author
 author:
-  name             : "정지운"
-  avatar           : "/assets/images/bio-photo-jibuntsukomikuma.jpg"
+  name             : "Jung Jiwoon"
+  avatar           : "/assets/images/jwjung_character.jpg"
   bio              : "배우고, 정리하고, 공유하기 위해"
   location         : "Seoul"
   email            :
