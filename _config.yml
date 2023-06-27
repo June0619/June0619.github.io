@@ -10,17 +10,17 @@
 # Review documentation to determine if you should use `theme` or `remote_theme`
 # https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
 
-# theme                  : "minimal-mistakes-jekyll"
+theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "neon" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
-locale                   : "en-US"
+locale                   : "ko"
 title                    : "To Be Better Than Yesterday"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "June0619"
-description              : "더 나은 내일을 위해"
+description              : "더 나은 내일을 위한 블로그"
 url                      : "https://June0619.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -59,7 +59,7 @@ reCaptcha:
 atom_feed:
   path                   : # blank (default) uses feed.xml
   hide                   : # true, false (default)
-search                   : # true, false (default)
+search                   : true # true, false (default)
 search_full_content      : # true, false (default)
 search_provider          : # lunr (default), algolia, google
 algolia:
@@ -153,6 +153,7 @@ footer:
 include:
   - .htaccess
   - _pages
+  - _layouts
 exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"
@@ -178,8 +179,6 @@ exclude:
   - Rakefile
   - README
   - tmp
-  - /docs # ignore Minimal Mistakes /docs
-  - /test # ignore Minimal Mistakes /test
 keep_files:
   - .git
   - .svn
@@ -197,6 +196,9 @@ incremental: false
 
 # Markdown Processing
 kramdown:
+  syntax_highlighter_opts:
+        block:
+            line_numbers: true
   input: GFM
   hard_wrap: false
   auto_ids: true
