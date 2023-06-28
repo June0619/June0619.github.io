@@ -1,5 +1,4 @@
-# To Be Better Than Yesterday
+# [To Be Better Than Yesterday](https://june0619.github.io/)
 ```
 🚩 Github Blog Page
 ```
-##[LINK](https://june0619.github.io/)
