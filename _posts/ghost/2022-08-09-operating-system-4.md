@@ -1,9 +1,5 @@
 ---
-title: [운영체제] 4. 병행 프로세스
-slug: operating-system-4
-date_published: 2022-08-09T11:09:00.000Z
-date_updated: 2022-08-16T04:56:57.000Z
-tags: 운영체제, 공부
+title: "[운영체제] 4. 병행 프로세스"
 ---
 
 ![](https://blog.kakaocdn.net/dn/rORtW/btrEH5achFe/gGujFT79WkFyqGK9NafL5K/img.png)

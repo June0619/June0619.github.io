@@ -1,9 +1,5 @@
 ---
-title: [운영체제] 10. 분산 운영체제
-slug: operating-system-10
-date_published: 2022-08-30T08:13:17.000Z
-date_updated: 2022-08-30T08:13:17.000Z
-tags: 공부, 운영체제
+title: "[운영체제] 10. 분산 운영체제"
 ---
 
 ![](__GHOST_URL__/content/images/2022/08/image-12.png)

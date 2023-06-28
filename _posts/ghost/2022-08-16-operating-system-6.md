@@ -1,9 +1,5 @@
 ---
-title: [운영체제] 6. 메모리 관리
-slug: operating-system-6
-date_published: 2022-08-16T04:33:28.000Z
-date_updated: 2022-08-16T04:34:38.000Z
-tags: 운영체제, 공부
+title: "[운영체제] 6. 메모리 관리"
 ---
 
 ![](__GHOST_URL__/content/images/2022/08/image-6.png)

@@ -1,9 +1,5 @@
 ---
-title: [운영체제] 3. 스케줄링 알고리즘
-slug: operating-system-3
-date_published: 2022-08-09T10:59:00.000Z
-date_updated: 2022-08-16T04:56:30.000Z
-tags: 운영체제, 공부
+title: "[운영체제] 3. 스케줄링 알고리즘"
 ---
 
 ![](__GHOST_URL__/content/images/2022/08/image-3.png)

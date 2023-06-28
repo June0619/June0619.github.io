@@ -1,9 +1,5 @@
 ---
-title: [운영체제] 5. 교착 상태
-slug: operating-system-5
-date_published: 2022-08-16T04:23:23.000Z
-date_updated: 2022-08-16T04:34:30.000Z
-tags: 운영체제, 공부
+title: "[운영체제] 5. 교착 상태"
 ---
 
 ![](__GHOST_URL__/content/images/2022/08/image-4.png)

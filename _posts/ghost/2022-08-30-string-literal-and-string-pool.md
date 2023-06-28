@@ -1,9 +1,5 @@
 ---
-title: [JAVA] String Literal 과 String Pool
-slug: string-literal-and-string-pool
-date_published: 2022-08-30T08:52:19.000Z
-date_updated: 2022-08-30T08:58:25.000Z
-tags: JAVA, 공부
+title: "[JAVA] String Literal 과 String Pool"
 ---
 
 ## 시작하며

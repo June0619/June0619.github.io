@@ -1,9 +1,5 @@
 ---
-title: [Mockito] Strict Stubbing
-slug: strict-stubbing
-date_published: 2022-09-05T05:50:38.000Z
-date_updated: 2022-09-05T05:59:46.000Z
-tags: JUnit, 공부
+title: "[Mockito] Strict Stubbing"
 ---
 
 ## 1.요약

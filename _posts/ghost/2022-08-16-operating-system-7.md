@@ -1,9 +1,5 @@
 ---
-title: [운영체제] 7. 가상 메모리
-slug: operating-system-7
-date_published: 2022-08-16T04:47:51.000Z
-date_updated: 2022-08-16T04:55:28.000Z
-tags: 운영체제, 공부
+title: "[운영체제] 7. 가상 메모리"
 ---
 
 ![](__GHOST_URL__/content/images/2022/08/image-9.png)

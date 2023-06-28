@@ -1,9 +1,5 @@
 ---
-title: [운영체제] 2. 프로세스 개요
-slug: operating-system-2
-date_published: 2022-08-04T10:11:00.000Z
-date_updated: 2022-08-16T04:56:11.000Z
-tags: 운영체제, 공부
+title: "[운영체제] 2. 프로세스 개요"
 ---
 
 ![](https://blog.kakaocdn.net/dn/Kq0s9/btrEE0Be44p/gXmmKTuSVFckPUIvMyNTKk/img.png)

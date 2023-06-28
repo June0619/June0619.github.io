@@ -1,9 +1,5 @@
 ---
-title: [운영체제] 8. 장치 관리
-slug: operating-system-8
-date_published: 2022-08-16T04:55:19.000Z
-date_updated: 2022-08-16T04:55:18.000Z
-tags: 운영체제, 공부
+title: "[운영체제] 8. 장치 관리"
 ---
 
 ![](__GHOST_URL__/content/images/2022/08/image-10.png)

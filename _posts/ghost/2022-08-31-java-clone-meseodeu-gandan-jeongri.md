@@ -1,9 +1,5 @@
 ---
-title: [JAVA] clone() 메서드 간단 정리
-slug: java-clone-meseodeu-gandan-jeongri
-date_published: 2022-08-31T09:09:55.000Z
-date_updated: 2022-08-31T09:09:55.000Z
-tags: JAVA, 공부
+title: "[JAVA] clone() 메서드 간단 정리"
 ---
 
 Object 클래스의 clone 메서드는 Cloneable 인터페이스를 상속하지 않으면 사용할 수 없으며, 사용 시 CloneNotSupportedException 을 핸들링 해야 합니다. (Checked Exception 이므로)

@@ -1,9 +1,5 @@
 ---
-title: [JPA] could not initialize proxy - no Session
-slug: jpa-could-not-initialize-proxy
-date_published: 2022-09-15T07:31:35.000Z
-date_updated: 2022-09-15T07:51:07.000Z
-tags: JPA, 공부
+title: "[JPA] could not initialize proxy - no Session"
 ---
 
 ## 1. 발생

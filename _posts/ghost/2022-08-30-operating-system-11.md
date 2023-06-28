@@ -1,9 +1,5 @@
 ---
-title: [운영체제] 11. 운영체제 보안
-slug: operating-system-11
-date_published: 2022-08-30T08:21:04.000Z
-date_updated: 2022-08-30T08:21:34.000Z
-tags: 공부, 운영체제
+title: "[운영체제] 11. 운영체제 보안"
 ---
 
 ![](https://blog.kakaocdn.net/dn/x5IMq/btrEVZgqrau/j2c009ZKykyHSlVwfKCNsK/img.png)

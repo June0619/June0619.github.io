@@ -1,9 +1,5 @@
 ---
-title: [운영체제] 9. 저장장치 및 파일
-slug: operating-system-9
-date_published: 2022-08-29T09:07:20.000Z
-date_updated: 2022-08-29T09:08:05.000Z
-tags: 운영체제, 공부
+title: "[운영체제] 9. 저장장치 및 파일"
 ---
 
 ![](__GHOST_URL__/content/images/2022/08/image-11.png)

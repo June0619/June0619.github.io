@@ -1,9 +1,5 @@
 ---
-title: [JAVA] Static 멤버를 위한 JVM 스토리지
-slug: jvm-storage
-date_published: 2022-08-30T09:05:40.000Z
-date_updated: 2023-01-03T06:44:25.000Z
-tags: JAVA, 공부
+title: "[JAVA] Static 멤버를 위한 JVM 스토리지"
 ---
 
 > 원문 : https://www.baeldung.com/jvm-static-storage
