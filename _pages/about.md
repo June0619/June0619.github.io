@@ -5,7 +5,7 @@ permalink: /about/
 author_profile: true
 ---
 
-![](__GHOST_URL__/content/images/2022/08/jwjung_character.jpg)
+![](/assets/images/ghost_images/2022/08/jwjung_character.jpg)
 ## Introduce
 
 - 웹 백엔드 개발자로 근무하고 있습니다.

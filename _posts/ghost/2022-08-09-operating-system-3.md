@@ -2,7 +2,7 @@
 title: "[운영체제] 3. 스케줄링 알고리즘"
 ---
 
-![](__GHOST_URL__/content/images/2022/08/image-3.png)
+![](/assets/images/ghost_images/2022/08/image-3.png)
 ## 1. 스케줄링 평가 기준
 
 일반적으로 스케줄링 알고리즘의 성능을 평가하는 데에는 **평균 대기시간**과 **평균 반환시간**이 사용된다.

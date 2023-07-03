@@ -2,11 +2,11 @@
 title: "[운영체제] 6. 메모리 관리"
 ---
 
-![](__GHOST_URL__/content/images/2022/08/image-6.png)
+![](/assets/images/ghost_images/2022/08/image-6.png)
 ## 1. 프로세스와 메모리
 
 프로세스가 동작하기 위해서는 CPU와 메모리는 필수적인 요소이다. 프로세스는 실행 중 프로그램 카운터(PC)가 참조하는 명령어를 읽어와서 실행한다. 여기서 PC가 참조하는 저장공간이 바로 메모리상의 공간이다.
-![](__GHOST_URL__/content/images/2022/08/image-7.png)단순한 형태의 메모리 구조![](__GHOST_URL__/content/images/2022/08/image-8.png)기억장치 계층구조
+![](/assets/images/ghost_images/2022/08/image-7.png)단순한 형태의 메모리 구조![](/assets/images/ghost_images/2022/08/image-8.png)기억장치 계층구조
 ## 2. 단일 프로그래밍 환경
 
 초기의 단일 프로그래밍 환경에서는 하나의 프로세스만 메모리를 사용하였다. 따라서 하나의 프로세스가 메모리에 연속된 블록으로 할당되는 연속 메모리 할당 방식을 이용하였다.

@@ -7,7 +7,7 @@ title: "[Mockito] Strict Stubbing"
 단위 테스트를 작성하다가 낯선 예외에 마주쳤다. 
 
 해당 예외 클래스의 description 을 확인한 결과, mockito 프레임워크의 `strictness` 레벨 설정에 관한 이슈가 있어 테스트가 실패하고 있었다.
-![](__GHOST_URL__/content/images/2022/09/image-6.png)
+![](/assets/images/ghost_images/2022/09/image-6.png)
 strictness 설정이란, 요악하자면 불필요한 stubbing 을 허용할지 말지에 대한 옵션이다. 기본 레벨이 `*STRICT_STUBS*`이며, `*LENIENT*`으로 수정해주어야 사용하지 않는 stub 에 대해 무시하고 통과할 수 있다. 
 
 즉,  stubbing 관련 로직을 BeforeEach 메서드에 별도로 정리하였는데, 이 mocking을 사용하지 않는 테스트가 존재하여 발생하는 에러였다.

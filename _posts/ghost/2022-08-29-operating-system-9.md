@@ -2,7 +2,7 @@
 title: "[운영체제] 9. 저장장치 및 파일"
 ---
 
-![](__GHOST_URL__/content/images/2022/08/image-11.png)
+![](/assets/images/ghost_images/2022/08/image-11.png)
 ## 1. 저장장치의 종류
 
 ### 순차접근 저장장치

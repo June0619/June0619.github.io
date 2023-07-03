@@ -2,7 +2,7 @@
 title: "[운영체제] 7. 가상 메모리"
 ---
 
-![](__GHOST_URL__/content/images/2022/08/image-9.png)
+![](/assets/images/ghost_images/2022/08/image-9.png)
 ## 1. 가상 메모리의 개념
 
 시스템 상 메모리의 크기가 특정 프로세스를 연속 할당하기에는 부족한 경우가 있다. 이런 경우 메모리에 프로세스를 적재하기 위한 방법으로 제시된 것이 **가상 메모리**(virtual memory)의 개념이다.

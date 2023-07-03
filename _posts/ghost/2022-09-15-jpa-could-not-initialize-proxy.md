@@ -21,7 +21,7 @@ title: "[JPA] could not initialize proxy - no Session"
 1. 엔티티의 조인 관계에서 지연 로딩을 사용하는 필드(FetchType.LAZY) 가 있는 엔티티를 조회 시, 해당 엔티티 객체의 프록시 객체가 반환된다.
 2. 영속성 컨텍스트 범위 밖에서 위의 프록시 객체가 조인 된 연관 관계 필드를 조회하려고 하면 해당 에러가 발생한다.
 
-![](__GHOST_URL__/content/images/2022/09/image-10.png)FechType.LAZY 상태에서 조인 필드 포함하여 조회 시![](__GHOST_URL__/content/images/2022/09/image-12.png)영속성 컨텍스트 밖 (ex: Controller) 에서 프록시 객체 조인 필드 조회 시
+![](/assets/images/ghost_images/2022/09/image-10.png)FechType.LAZY 상태에서 조인 필드 포함하여 조회 시![](/assets/images/ghost_images/2022/09/image-12.png)영속성 컨텍스트 밖 (ex: Controller) 에서 프록시 객체 조인 필드 조회 시
 ### 2-2. 에러 발생 시 상황
 
 1. 에러가 발생한 부분의 엔티티 연관 관계는 회원과 회원-그룹 (1:N) 관계이다.
@@ -29,7 +29,7 @@ title: "[JPA] could not initialize proxy - no Session"
 3. 요청 스레드 컨텍스트에 회원 정보를 저장하기 위해 Entity 정보를 DTO 로 변환 한다.
 4. DTO 변환 과정에서 영속성 컨텍스트를 빠져나온 엔티티 프록시 객체가 소속 그룹 정보를 요청한다.
 
-![](__GHOST_URL__/content/images/2022/09/image-13.png)![](__GHOST_URL__/content/images/2022/09/image-17.png)
+![](/assets/images/ghost_images/2022/09/image-13.png)![](/assets/images/ghost_images/2022/09/image-17.png)
 ---
 
 ## 3. 해결 방법

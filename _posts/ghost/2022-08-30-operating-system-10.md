@@ -2,7 +2,7 @@
 title: "[운영체제] 10. 분산 운영체제"
 ---
 
-![](__GHOST_URL__/content/images/2022/08/image-12.png)
+![](/assets/images/ghost_images/2022/08/image-12.png)
 ## 1. 분산 운영체제 개요
 
 ### 분산 시스템
