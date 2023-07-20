@@ -9,10 +9,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
 
-// "Cafe24Oneprettynight"
 @font-face {
-    font-family: 'Cafe24Oneprettynight';
-    src: local('Cafe24Oneprettynight'), url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.1/Cafe24Oneprettynight.woff') format('woff');
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -20,7 +19,7 @@
 @font-face {
     font-family: 'D2Coding';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_three@1.0/D2Coding.woff') format('woff');
-    font-weight: normal;
+    font-weight: lighter;
     font-style: normal;
 }
 
@@ -28,7 +27,8 @@
 :root {
 
     /* Fonts */
-    --font-sans: "-apple-system", "BlinkMacSystemFont","Apple SD Gothic Neo", "NanumSquareRound", "Segoe UI", Sans-Serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    //NanumSquareRound
+    --font-sans: "-apple-system", "BlinkMacSystemFont","Apple SD Gothic Neo", "GmarketSansMedium", "Segoe UI", Sans-Serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     --font-serif: Georgia, Times, serif;
     --font-mono: Menlo, Courier, monospace;
     --font-code: Hack, monospace;
@@ -44,5 +44,6 @@
 }
 
 p {
-    font-family: 'Noto Sans KR', sans-serif;
+    font-family: var(--font-sans);
+    font-weight: 300;
 }
