@@ -71,6 +71,7 @@ body {
 .page__title {
   margin-top: 0;
   line-height: 1;
+  font-size: 22px;
 
   a {
     color: $text-color;
@@ -79,6 +80,7 @@ body {
 
   & + .page__meta {
     margin-top: -0.5em;
+    font-size: 15px;
   }
 }
 

@@ -191,7 +191,7 @@ hr {
 
 ul li,
 ol li {
-  margin-bottom: 0.5em;
+  margin-bottom: 0.25em;
 }
 
 li ul,
@@ -264,9 +264,9 @@ figure {
 
 figcaption {
   // margin-bottom: 0.5em;
-  color: $gray;
+  color: $light-gray;
   font-family: var(--font-caption);
-  font-size: $type-size-6;
+  font-size: $type-size-5;
   margin: auto;
 
   a {
