@@ -226,6 +226,7 @@ figure {
     border-radius: $border-radius;
     -webkit-transition: $global-transition;
     transition: $global-transition;
+    margin-bottom: 0.5em;
   }
 
   > a {
@@ -262,10 +263,11 @@ figure {
 /* Figure captions */
 
 figcaption {
-  margin-bottom: 0.5em;
-  color: $muted-text-color;
-  font-family: $caption-font-family;
+  // margin-bottom: 0.5em;
+  color: $gray;
+  font-family: var(--font-caption);
   font-size: $type-size-6;
+  margin: auto;
 
   a {
     -webkit-transition: $global-transition;

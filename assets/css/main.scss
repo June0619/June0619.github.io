@@ -17,9 +17,23 @@
 }
 
 @font-face {
+    font-family: 'NanumSquareRound';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumSquareRound.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
     font-family: 'D2Coding';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_three@1.0/D2Coding.woff') format('woff');
     font-weight: lighter;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SUITE-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/SUITE-Regular.woff2') format('woff2');
+    font-weight: 400;
     font-style: normal;
 }
 
@@ -28,8 +42,9 @@
 
     /* Fonts */
     //NanumSquareRound
-    --font-sans: "-apple-system", "BlinkMacSystemFont","Apple SD Gothic Neo", "GmarketSansMedium", "Segoe UI", Sans-Serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    --font-sans: "-apple-system", "BlinkMacSystemFont","Apple SD Gothic Neo", "NanumSquareRound", "Segoe UI", Sans-Serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     --font-serif: Georgia, Times, serif;
+    --font-caption: SUITE-Regular, Times, serif;
     --font-mono: Menlo, Courier, monospace;
     --font-code: Hack, monospace;
 
