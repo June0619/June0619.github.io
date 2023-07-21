@@ -216,7 +216,7 @@ sass:
 
 # Outputting
 permalink: /:categories/:title/
-paginate: 5 # amount of posts to show
+paginate: 10 # amount of posts to show
 paginate_path: /page:num/
 timezone: Asia/Seoul
 
@@ -294,5 +294,6 @@ defaults:
       toc_sticky: true
       sitemap: true
       show_date: true
+      breadcrumbs: ture
 
 date_format: "%Y, %m월 %d일"

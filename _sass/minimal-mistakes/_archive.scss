@@ -44,11 +44,12 @@
 }
 
 .archive__item-title {
-  margin-bottom: 0.25em;
+  margin: 0 0 0.3em 0;
   font-family: $sans-serif-narrow;
   line-height: initial;
   overflow: hidden;
   text-overflow: ellipsis;
+  font-size: 20px;
 
   a[rel="permalink"]::before {
     content: '';
@@ -126,7 +127,7 @@
 
 .list__item {
   .page__meta {
-    margin: 0 0 4px;
+    margin: 0 0 6px;
     font-size: 0.6em;
   }
 }
