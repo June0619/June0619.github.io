@@ -13,7 +13,6 @@
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
 minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
-
 # Site Settings
 locale                   : "ko"
 title                    : "To Be Better Than Yesterday"
@@ -291,3 +290,9 @@ defaults:
       related: true
       mathjax: true
       sidebar_main: true
+      toc: true
+      toc_sticky: true
+      sitemap: true
+      show_date: true
+
+date_format: "%Y, %m월 %d일"
