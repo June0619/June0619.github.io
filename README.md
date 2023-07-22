@@ -2,3 +2,8 @@
 ```
 🚩 Github Blog Page
 ```
+
+> 🛠 How to Run
+> cd ${project_root}
+> bundle install
+> bundle exec jekyll serve
