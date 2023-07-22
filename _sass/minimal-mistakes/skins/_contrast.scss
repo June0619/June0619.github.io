@@ -5,16 +5,18 @@
 /* Colors */
 $text-color: #000 !default;
 $muted-text-color: $text-color !default;
-$primary-color: #ff0000 !default;
+// $primary-color: #ff0000 !default;
+$primary-color: #105796 !default;
 $border-color: mix(#fff, $text-color, 75%) !default;
 $footer-background-color: #000 !default;
-$link-color: #0000ff !default;
+$link-color: #105796 !default;
 $masthead-link-color: $text-color !default;
 $masthead-link-color-hover: $text-color !default;
 $navicon-link-color-hover: mix(#fff, $text-color, 80%) !default;
+$link-color-hover: mix(#fff, $link-color, 50%) !default;
 
 /* contrast syntax highlighting (base16) */
-$base00: #000000 !default;
+$base00: #282c34 !default;
 $base01: #242422 !default;
 $base02: #484844 !default;
 $base03: #6c6c66 !default;

@@ -12,7 +12,7 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "contrast" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 # Site Settings
 locale                   : "ko"
 title                    : "To Be Better Than Yesterday"
@@ -286,8 +286,8 @@ defaults:
       author_profile: true
       read_time: true
       comments: #true
-      share: true
-      related: true
+      share: false
+      related: false
       mathjax: true
       sidebar_main: true
       toc: true
