@@ -3,7 +3,12 @@
 🚩 Github Blog Page
 ```
 
-> 🛠 How to Run
-> cd ${project_root}
-> bundle install
-> bundle exec jekyll serve
+## 🎨 Theme
+- [Minimal Mistakes](https://mademistakes.com/work/jekyll-themes/minimal-mistakes/)
+
+## 🛠 How to Run
+``` bash
+cd $PROJECT_ROOT
+bundle install
+bundle exec jekyll serve
+```
