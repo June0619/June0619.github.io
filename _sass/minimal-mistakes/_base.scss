@@ -127,6 +127,8 @@ blockquote {
 
 a {
   text-underline-position: under;
+  overflow: hidden;
+  word-break: break-all;
 
   &:focus {
     @extend %tab-focus;
