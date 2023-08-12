@@ -1,14 +1,22 @@
 ---
 title: "[운영체제] 5. 교착 상태"
+tags: 
+    - Study
+    - OperationgSystem
+categories:
+    - CS
 ---
 
-![](/assets/images/ghost_images/2022/08/image-4.png)
+{% include figure path='https://blog.kakaocdn.net/dn/v4Tnd/btrEGJZ3WQf/ZbaS4GDkoJlqOFICdzuQw0/img.png' %}
+
 ## 1. 교착상태의 개념
 
 두개 이상의 프로세스가 서로 자원 할당을 위해 다른 프로세스의 작업이 끝나기만을 무한하게 기다리고 있는 상태를 의미한다.
 
 기아상태는 프로세스의 일부가 자원 할당을 위한 대기가 지속적으로 일어나는 것을 의미하고, 교착상태는 모든 프로세스의 진행이 멈춘 상태를 의미한다.
-![](/assets/images/ghost_images/2022/08/image-5.png)교착 상태(deadlock) 의 도식
+
+{% include figure path='/assets/images/ghost_images/2022/08/image-5.png' caption='교착 상태(deadlock) 의 도식' %}
+
 ## 2. 교착상태의 특성
 
 ### 교착상태의 필요조건
@@ -41,7 +49,9 @@ title: "[운영체제] 5. 교착 상태"
 - Q (p → r) : 프로세스 p 가 자원 r 을 요구하는 것을 나타냄 (요구간선)
 - S (r → p) : 자원 r 가 프로세스 p 에 할당되어 있는 것을 나타냄 (할당간선)
 
-![](https://blog.kakaocdn.net/dn/XS96s/btrCyeBHzO8/WU6YB7NYSXPkOqMT4CEWSk/img.png)교착상태를 나타낸 간선그래프의 예
+
+{% include figure path='https://blog.kakaocdn.net/dn/XS96s/btrCyeBHzO8/WU6YB7NYSXPkOqMT4CEWSk/img.png' caption='교착상태를 나타낸 간선그래프의 예' %}
+
 ## 3. 교착상태 처리
 
 ### 방지

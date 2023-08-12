@@ -1,8 +1,14 @@
 ---
 title: "[운영체제] 10. 분산 운영체제"
+tags: 
+    - Study
+    - OperationgSystem
+categories:
+    - CS
 ---
 
-![](/assets/images/ghost_images/2022/08/image-12.png)
+{% include figure path='https://blog.kakaocdn.net/dn/v4Tnd/btrEGJZ3WQf/ZbaS4GDkoJlqOFICdzuQw0/img.png' %}
+
 ## 1. 분산 운영체제 개요
 
 ### 분산 시스템
@@ -10,7 +16,9 @@ title: "[운영체제] 10. 분산 운영체제"
 분산 시스템이란, 통신 네트워크를 통해 서로 약하게 결합된 프로세서들의 집합이다. 각 프로세서는 메모리와 클럭을 공유하지 않는다. 또한 각 프로세서는 자신의 로컬 메모리를 가지며 LAN 또는 WAN과 같은 네트워크를 통해 통신한다. 분산 시스템 내에 하나의 프로세서의 관점에서 자신이 가지고 있는 자원을 로컬이라고 하고, 그 프로세서 외의 나머지 프로세서들과 그들의 자원을 원격이라고 한다.
 
 분산 시스템 내의 프로세서들은 시스템 환경에 따라 사이트, 노드, 컴퓨터, 기계, 호스트 등 여러 용어로 불린다. 프로세서의 위치를 강조하기 위해 **사이트** 라는 용어를 사용하며, 사이트에 있는 특정 시스템을 나타내기 위해 **호스트** 라는 용어를 사용한다. 또한 한 사이트의 호스트 자원을 다른 사이트가 사용한다고 할 때 자원을 가진쪽을 **서버**라고 하며, 그 자원을 이용하는 쪽을 **클라이언트**, 혹은 **사용자** 라고 한다.
-![](https://blog.kakaocdn.net/dn/d0QGHl/btrEJ5CfXuK/kXRuY9HfeSEnxYUibYL4k0/img.png)분산 시스템의 개괄적 구축 모델
+
+{% include figure path='https://blog.kakaocdn.net/dn/d0QGHl/btrEJ5CfXuK/kXRuY9HfeSEnxYUibYL4k0/img.png' caption='분산 시스템의 개괄적 구축 모델' %}
+
 
 분산 시스템을 구축하는 목적은 일반적으로 다음과 같다.
 
@@ -20,7 +28,8 @@ title: "[운영체제] 10. 분산 운영체제"
 - 통신의 용이성
 
 분산 시스템의 네트워크 구성은 물리적 형태에 따라 다양한 연결 방법이 존재한다. 또한 각 노드끼리 간선의 구성 형태에 따라 **구축비용**, **통신비용**, **가용성이** 각각 달라진다. 구축비용은 말 그대로 사이트들이 얼마나 물리적으로 밀도있게 연결되어 있는지에 따라 달라진다. 통신비용은 사이트 별 데이트를 통신하는데 얼마나 많은 노드를 거쳐야하는지로 정해진다. 가용성은 링크나 사이트가 고장나도 데이터에 접근할 수 있는지의 여부에 따라 달라진다.
-![](https://blog.kakaocdn.net/dn/Vipg1/btrEJvBdFuL/gc7eAajWv2zxDJv4VGyIJ1/img.png)분산 시스템의 네트워크 구성
+
+{% include figure path='https://blog.kakaocdn.net/dn/Vipg1/btrEJvBdFuL/gc7eAajWv2zxDJv4VGyIJ1/img.png' caption='분산 시스템의 네트워크 구성' %}
 
 네트워크에는 기본적으로 **근거리 통신망(Local-Area Network, LAN) **과 **원거리 통신망(Wide-Area Network, WAN)** 두 가지 형태가 있으며, 주된 차이점은 지리적인 분산 형태이다. LAN은 하나의 빌딩 또는 인접한 빌딩 등과 같이 좁은 지역에 분산된 프로세서들로 구성된다. 반면 WAN은 도시나 국가 등 넓은 지역에 분포된 프로세서들로 구성된다.
 

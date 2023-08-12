@@ -1,14 +1,19 @@
 ---
-title: "[JAVA] Static 멤버를 위한 JVM 스토리지"
+title: "[Java] Static 멤버를 위한 JVM 스토리지"
+tags: 
+    - Study
+    - Java
+categories:
+    - Java
 ---
 
-> 원문 : https://www.baeldung.com/jvm-static-storage
-> 오역이나 의역이 많을 수 있습니다. 참고용으로만 읽어주시길 바랍니다.
+> 💡Refferecne: https://www.baeldung.com/jvm-static-storage
 
-![](https://blog.kakaocdn.net/dn/bxvzbX/btry7rRlJiB/VfYUEYU9cyDqCa8YmPC8g1/img.png)JVM 메모리 구조 도식
+{% include figure path='https://blog.kakaocdn.net/dn/bxvzbX/btry7rRlJiB/VfYUEYU9cyDqCa8YmPC8g1/img.png' caption='JVM 메모리 구조 도식' %}
+
 ### 1. 개요
 
-우리는 종종 JVM의 내부 메모리 할당을 간과하며 작업하고는 한다. 하지만 성능과 코드 품질 향상을 위해서는 JVM 메모리의 기본적인 사항을 공부할 필요가 있다. 이번 기사에서는, 우리는 JVM 저장공간과 static 필드 관해 공부해 볼 예정이다.
+우리는 종종 JVM의 내부 메모리 할당을 간과하며 작업하고는 한다. 하지만 성능과 코드 품질 향상을 위해서는 JVM 메모리의 기본적인 사항을 공부할 필요가 있다. 이번에는 JVM 저장공간과 static 필드 관해 공부해 볼 예정이다.
 
 ### 2. JVM의 메모리 구분
 
@@ -16,7 +21,7 @@ title: "[JAVA] Static 멤버를 위한 JVM 스토리지"
 
 #### 2.1 Heap 메모리
 
-힙 메모리는 런타임 저장 공간이다. 그리고 모든 JVM 스레드는 힙 메모리를 공유하며, 클래스 인스턴스와 배열등이 생성되면 이 곳에 저장된다. 자바에서는 힙 메모리를 두 가지 공간으로 분류하는데, 젊은 객체 공간 (young generation) 과 늙은 객체 공간 (old generation) 이다. 또한 젊은 객체 공간은 내부적으로 에덴(Eden)과 생존자 공간(Survivor space) 으로 분리된다. (생존자 공간은 From 영역과 To 영역으로 구분된다.) 늙은 객체 공간은 교수 객체 공간(Tenured) 으로 불리기도 한다. 힙 메모리에 생성된 객체의 라이프 사이클은 가비지 콜렉터(GC)라고 알려진 메모리 관리 시스템에 의해 자동으로 관리된다. 결과적으로 가비지 콜렉터는 객체의 메모리 할당을 해제하거나, 힙 메모리 내의 여러 영역으로 이동시키면서 메모리를 관리한다.
+힙 메모리는 런타임 저장 공간이다. (애플리케이션 구동 중 실시간으로 운영되는 저장공간이라는 의미이다.) 그리고 모든 JVM 스레드는 힙 메모리를 공유하며, 클래스 인스턴스와 배열등이 생성되면 이 곳에 저장된다. 자바에서는 힙 메모리를 두 가지 공간으로 분류하는데, `young generation` 과 `old generation` 이다. 또한 `young generation`은 내부적으로 `Eden`과 `Survivor space` 으로 분리된다. (`Survivor space`은 From 영역과 To 영역으로 구분된다.) `old generation`은 교수 객체 공간(Tenured) 으로 불리기도 한다. 힙 메모리에 생성된 객체의 라이프 사이클은 가비지 콜렉터(GC)라고 알려진 메모리 관리 시스템에 의해 자동으로 관리된다. 결과적으로 가비지 콜렉터는 객체의 메모리 할당을 해제하거나, 힙 메모리 내의 여러 영역으로 이동시키면서 메모리를 관리한다.
 
 #### 2.2 Non-Heap 메모리
 

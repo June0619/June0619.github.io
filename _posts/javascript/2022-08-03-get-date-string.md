@@ -1,5 +1,7 @@
 ---
 title: "[JavaScript] 간단하게 'yyyy-MM-dd' 포맷 문자열 구하기"
+category: 
+    - Javascript
 ---
 
 JavaScript Date 객체를 자주 사용하는 'yyyy-MM-dd' 포맷의 String 타입으로 변환 하고 싶다면 [toISOString](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Date/toISOString) 함수를 이용하면 간편하다. 

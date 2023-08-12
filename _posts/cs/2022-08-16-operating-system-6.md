@@ -1,12 +1,22 @@
 ---
 title: "[운영체제] 6. 메모리 관리"
+tags: 
+    - Study
+    - OperationgSystem
+categories:
+    - CS
 ---
 
-![](/assets/images/ghost_images/2022/08/image-6.png)
+{% include figure path='https://blog.kakaocdn.net/dn/v4Tnd/btrEGJZ3WQf/ZbaS4GDkoJlqOFICdzuQw0/img.png' %}
+
 ## 1. 프로세스와 메모리
 
 프로세스가 동작하기 위해서는 CPU와 메모리는 필수적인 요소이다. 프로세스는 실행 중 프로그램 카운터(PC)가 참조하는 명령어를 읽어와서 실행한다. 여기서 PC가 참조하는 저장공간이 바로 메모리상의 공간이다.
-![](/assets/images/ghost_images/2022/08/image-7.png)단순한 형태의 메모리 구조![](/assets/images/ghost_images/2022/08/image-8.png)기억장치 계층구조
+
+{% include figure path='/assets/images/ghost_images/2022/08/image-7.png' caption='단순한 형태의 메모리 구조' %}
+
+{% include figure path='/assets/images/ghost_images/2022/08/image-8.png' caption='기억장치 계층구조' %}
+
 ## 2. 단일 프로그래밍 환경
 
 초기의 단일 프로그래밍 환경에서는 하나의 프로세스만 메모리를 사용하였다. 따라서 하나의 프로세스가 메모리에 연속된 블록으로 할당되는 연속 메모리 할당 방식을 이용하였다.
@@ -17,7 +27,8 @@ title: "[운영체제] 6. 메모리 관리"
 - 사용되지 않는 프로세스도 메모리에 적재되어 있어야 한다.
 - 한 명의 유저가 메모리를 점거하고 있으므로 주변장치 등 자원의 낭비가 심하다.
 
-![](https://blog.kakaocdn.net/dn/NSofa/btrC6fstGUy/8pP5tObNi1rbaAgwLL3K7k/img.png)단일 프로그래밍 환경에서의 CPU 이용
+{% include figure path='https://blog.kakaocdn.net/dn/NSofa/btrC6fstGUy/8pP5tObNi1rbaAgwLL3K7k/img.png' caption='단일 프로그래밍 환경에서의 CPU 이용' %}
+
 ### 메모리 분할
 
 여러 프로세스를 메모리에 적재하고 사용하려면, 당연하게도 메모리를 분할하여 적재하여야 한다. 프로세스를 적재하기 위해 메모리를 나누는 방식을 크게 두가지로 구분할 수 있는데, 고정 분할 방식과 동적 분할 방식이다.
@@ -25,12 +36,14 @@ title: "[운영체제] 6. 메모리 관리"
 #### 1. 고정 분할
 
 고정 분할은 이름 그대로 메모리를 여러 개의 고정된 영역으로 분할하는 방식이다.
-![](https://blog.kakaocdn.net/dn/YuMzd/btrC7zjI2SF/p29MmMPr3qRPa6pz4Sgb9k/img.png)고정 분할의 예
+
+{% include figure path='https://blog.kakaocdn.net/dn/YuMzd/btrC7zjI2SF/p29MmMPr3qRPa6pz4Sgb9k/img.png' caption='고정 분할의 예' %}
 
 이렇게 고정 분할한 메모리에 프로세스를 할당하기 위한 방법으로 두 가지 방법이 있다.
 
 첫 번째 방법은 각 분할된 영역에 따로 큐를 두고, 한 분할 영역에 하나의 프로세스를 적재하는 방식이다. 이는 각 프로세스가 어떠한 큐에서 작업할 지 정해져 있으므로 컴파일 시점에 **메모리의 절대주소**를 사용한다. 운영체제가 구현해야 할 작업 할당은 단순하지만 당연히 작업이 비어있는 분할 영역이 있어도 다른 프로세스의 작업을 적재할 수 없으므로 효율성이 떨어진다.
-![](https://blog.kakaocdn.net/dn/bjdZ4d/btrC7JGohBz/ZLLEIbLYoPusHhtnAffo01/img.png)절대주소를 이용
+
+{% include figure path='https://blog.kakaocdn.net/dn/bjdZ4d/btrC7JGohBz/ZLLEIbLYoPusHhtnAffo01/img.png' caption='절대주소를 이용' %}
 
 두 번째 방법은 메모리 전체에 하나의 작업 큐를 두고 모든 프로세스를 작업 큐에 넣어서 어느 분할 영역에서든지 실행 가능하도록 만드는 것이다. 프로세스 컴파일 시 어떠한 메모리 공간에도 적재가 가능하도록 상대주소를 사용하며, 적재될 주소 지정등의 문제를 해결하기 위한 구현이 복잡한 문제가 있다.
 
@@ -39,10 +52,12 @@ title: "[운영체제] 6. 메모리 관리"
 #### 2. 동적 분할
 
 메모리 분할 경계가 고정되지 않고 각 프로세스에 필요한 만큼의 메모리만 할당하는 방식이다.
-![](https://blog.kakaocdn.net/dn/bZfdnp/btrC6fMQHAO/eFVussfz1I0MiU6yM0k1Q0/img.png)동적분할의 예
+
+{% include figure path='https://blog.kakaocdn.net/dn/bZfdnp/btrC6fMQHAO/eFVussfz1I0MiU6yM0k1Q0/img.png' caption='동적분할의 예' %}
 
 동적분할은 프로세스의 크기만큼 메모리가 분할되기 때문에 앞서 설명했던 내부 단편화 문제는 일어나지 않지만, 프로세스의 할당과 종료가 반복됨에 따라 작은 크기의 공백이 흩어지는 **외부 단편화 문제**가 발생한다.
-![](https://blog.kakaocdn.net/dn/bdGBZF/btrC4gTeQCD/J2VDKMycUjGRcuHQV0KHQ0/img.png)외부 단편화의 예시
+
+{% include figure path='https://blog.kakaocdn.net/dn/bdGBZF/btrC4gTeQCD/J2VDKMycUjGRcuHQV0KHQ0/img.png' caption='외부 단편화의 예시' %}
 
 외부 단편화를 해결하는 방법으로는 **통합**과 **집약**이 있다.
 

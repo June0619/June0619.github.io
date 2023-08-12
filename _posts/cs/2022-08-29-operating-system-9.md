@@ -1,8 +1,14 @@
 ---
 title: "[운영체제] 9. 저장장치 및 파일"
+tags: 
+    - Study
+    - OperationgSystem
+categories:
+    - CS
 ---
 
-![](/assets/images/ghost_images/2022/08/image-11.png)
+{% include figure path='https://blog.kakaocdn.net/dn/v4Tnd/btrEGJZ3WQf/ZbaS4GDkoJlqOFICdzuQw0/img.png' %}
+
 ## 1. 저장장치의 종류
 
 ### 순차접근 저장장치
@@ -58,7 +64,9 @@ SCAN 혹은 C-SCAN 알고리즘과 기본적으로 거의 동일하지만, 앞�
 ### 파일 관리자의 요소
 
 파일 관리자(file manager)는 파일에 의해 사용되는 자원 및 파일을 생성, 삭제, 수정, 접근 제어를 담당하는 운영체제의 주요 구성요소 소프트웨어이다.
-![](https://blog.kakaocdn.net/dn/badQ4M/btrECAJLyPe/YLs7x6ksk7IWp5vCy59KfK/img.png)2단계 계층구조 파일시스템
+
+{% include figure path='https://blog.kakaocdn.net/dn/badQ4M/btrECAJLyPe/YLs7x6ksk7IWp5vCy59KfK/img.png' caption='2단계 계층구조 파일시스템' %}
+
 ### 파일 관리자의 기능
 
 파일 관리자가 담당하는 기능들은 다음과 같다.

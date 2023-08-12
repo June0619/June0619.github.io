@@ -1,8 +1,13 @@
 ---
 title: "[운영체제] 8. 장치 관리"
+tags: 
+    - Study
+    - OperationgSystem
+categories:
+    - CS
 ---
 
-![](/assets/images/ghost_images/2022/08/image-10.png)
+{% include figure path='https://blog.kakaocdn.net/dn/v4Tnd/btrEGJZ3WQf/ZbaS4GDkoJlqOFICdzuQw0/img.png' %}
 ## 1. 장치의 개념
 
 컴퓨터 시스템에는 다양한 장치가 존재한다. 프로세스 관점에서 보면 CPU와 메모리 등 실행에 필수적인 장치가 있는 반면 장치들은 데이터의 입출력에 사용되는 부가적인 장치이다.
@@ -24,7 +29,8 @@ title: "[운영체제] 8. 장치 관리"
 - 응용 프로그램이 요청한 일반적인 입출력 요청을 장치에 맞게 변환한다.
 
 ### 물리적 구성
-![](https://blog.kakaocdn.net/dn/oWkWO/btrEE1NbFpQ/R4bIZr6TKmy09KNXh7wVVK/img.png)입력장치의 물리적 구성
+
+{% include figure path='https://blog.kakaocdn.net/dn/oWkWO/btrEE1NbFpQ/R4bIZr6TKmy09KNXh7wVVK/img.png' caption='입력장치의 물리적 구성' %}
 
 장치의 물리적 구성은 CPU와 메모리, 그리고 나머지 장치들이 버스(bus) 로 연결되어 있는 형태를 띄고 있다.
 
@@ -53,9 +59,10 @@ CPU와 DMA 모두 메모리를 엑세스하기 때문에 동시에 엑세스 하
 ### 버퍼링
 
 버퍼(buffer)란 입출력 데이터 등의 정보를 전송할 때 임시적으로 데이터를 저장하는 메모리 공간이다. CPU의 데이터 처리 속도와 데이터 전송 속도의 차이로 인한 문제를 버퍼를 통해 해결한다.
-![](https://blog.kakaocdn.net/dn/BDOr6/btrECu2I7Ke/Ui9I5uHqGq5aAFMncYwTLK/img.png)순환버퍼의 예시
-### 
-스풀링
+
+{% include figure path='https://blog.kakaocdn.net/dn/BDOr6/btrECu2I7Ke/Ui9I5uHqGq5aAFMncYwTLK/img.png' caption='순환버퍼의 예시' %}
+
+### 스풀링
 
 스풀링(Simultaneous Peripheral Operation On Line, SPOOLing)은 입출력 프로세스와 저속 입출력장치 사이의 데이터 전송을 자기 디스크와 같은 고속 장치를 통하도록 하는 것으로 일종의 버퍼링이다.
 

@@ -1,8 +1,14 @@
 ---
 title: "[운영체제] 4. 병행 프로세스"
+tags: 
+    - Study
+    - OperationgSystem
+categories:
+    - CS
 ---
 
-![](https://blog.kakaocdn.net/dn/rORtW/btrEH5achFe/gGujFT79WkFyqGK9NafL5K/img.png)
+{% include figure path='https://blog.kakaocdn.net/dn/v4Tnd/btrEGJZ3WQf/ZbaS4GDkoJlqOFICdzuQw0/img.png' %}
+
 ## 
 1. 병행 프로세스의 개념
 
@@ -64,7 +70,10 @@ title: "[운영체제] 4. 병행 프로세스"
 - 두 가지 유명한 예제가 있는데 생산자와 소비자, 판독기와 기록기 예제이다.
 
 ### 생산자와 소비자 문제
-![](https://blog.kakaocdn.net/dn/cpHzY0/btrBJMxGfq0/NlgwyweQE4jcWGiBJFDCI1/img.png)
+
+{% include figure path='https://blog.kakaocdn.net/dn/cpHzY0/btrBJMxGfq0/NlgwyweQE4jcWGiBJFDCI1/img.png' %}
+
+![]()
 - 개요
 
 고정된 크기를 가진 버퍼를 사이에 두고 버퍼가 비어 있다면 소비자가 기다리게 되고 버퍼가 가득 차게 되면 생산자가 기다리게 된다.
@@ -76,39 +85,41 @@ title: "[운영체제] 4. 병행 프로세스"
 생산이 이루어져야 소비가 이루어지며, 버퍼 용량 이상으로 생산하면 안된다.
 
 - 생산자 프로세스 의사코드
-
-    repeat
-        ...         
-        nextp에 데이터 항목을 생산함
-        ...         
-        P(empty);
-        P(mutex);
-        ...
-        nextp를 버퍼에 넣음
-        ...
-        V(mutex)
-    	V(full)
-    until false;
-
+```
+repeat
+    ...         
+    nextp에 데이터 항목을 생산함
+    ...         
+    P(empty);
+    P(mutex);
+    ...
+    nextp를 버퍼에 넣음
+    ...
+    V(mutex)
+    V(full)
+until false;
+```
 - 소비자 프로세스 의사코드
-
-    repeat
-        P(full);
-        P(mutex);
-        ...
-        버퍼에서 데이터 항목을 꺼내 nextc에 넣음
-        ...
-        V(mutex);
-        V(empty);
-        ...
-        nextxc에 있는 데이터 항목 소비
-        ...
-    until false;
+```
+repeat
+    P(full);
+    P(mutex);
+    ...
+    버퍼에서 데이터 항목을 꺼내 nextc에 넣음
+    ...
+    V(mutex);
+    V(empty);
+    ...
+    nextxc에 있는 데이터 항목 소비
+    ...
+until false;
+```
 
 ### 판독기/기록기 문제
-![](https://blog.kakaocdn.net/dn/Iy2u6/btrBF4s3kWs/aksltgoMebCZvkwUKGZ621/img.png)
-- 개요
 
+{% include figure path='https://blog.kakaocdn.net/dn/Iy2u6/btrBF4s3kWs/aksltgoMebCZvkwUKGZ621/img.png' %}
+
+- 개요
 데이터 오브젝트에 대해 읽고자 하는 프로세스를 판독기(reader), 쓰고자 하는 프로세스를 기록기 (writer) 라고 한다. 이에 대해 복수의 판독기가 동시에 공유객체에 접근 하는 것은 문제가 되지 않지만, 하나의 기록기와 다른 프로세스가 동시에 공유객체에 접근하는 것은 배타적으로 이루어져야 한다.
 - 제 1판독기 문제
 

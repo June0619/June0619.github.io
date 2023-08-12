@@ -1,8 +1,14 @@
 ---
 title: "[운영체제] 7. 가상 메모리"
+tags: 
+    - Study
+    - OperationgSystem
+categories:
+    - CS
 ---
 
-![](/assets/images/ghost_images/2022/08/image-9.png)
+{% include figure path='https://blog.kakaocdn.net/dn/v4Tnd/btrEGJZ3WQf/ZbaS4GDkoJlqOFICdzuQw0/img.png' %}
+
 ## 1. 가상 메모리의 개념
 
 시스템 상 메모리의 크기가 특정 프로세스를 연속 할당하기에는 부족한 경우가 있다. 이런 경우 메모리에 프로세스를 적재하기 위한 방법으로 제시된 것이 **가상 메모리**(virtual memory)의 개념이다.
@@ -12,12 +18,17 @@ title: "[운영체제] 7. 가상 메모리"
 이 때, 실행 프로세스가 참조하는 주소를 **가상 주소(virtual address)** 라고 부르며, 실제 메모리에서 사용하는 주소를 **실주소(real address)** 또는 **물리적 주소(physical address)** 라고 한다.
 
 또한 실행 프로세스가 참조하는 가상주소의 범위를 **가상주소 공간(virtual address space) V** 라고 하며, 특정 컴퓨터 시스템에서 사용 가능한 실주소 범위를 **실주소 공간(real address space) R** 이라고 한다.
-![](https://blog.kakaocdn.net/dn/bQee4U/btrEcQEZVPE/V7KkPcBkp2jNksVbf89eMk/img.png)프로세스 실행에 필요한 공간이 시스템 메모리 공간보다 큰 경우
+
+{% include figure path='https://blog.kakaocdn.net/dn/bQee4U/btrEcQEZVPE/V7KkPcBkp2jNksVbf89eMk/img.png' caption='프로세스 실행에 필요한 공간이 시스템 메모리 공간보다 큰 경우' %}
+
 프로세스는 가상주소를 참조하지만, 명령어가 실행되기 위해서는 실제로 메모리에서 실행되어야 하므로 프로세스 실행 시 가상주소를 실주소로 변환하는 과정이 필요하다. 이를 **사상(mapping)** 이라고 하며, 변환 함수로 표시한다.
-![](https://blog.kakaocdn.net/dn/rh73h/btrD8i3cILM/QY6KbMP0q28AAf1jEpNg40/img.png)
+
+{% include figure path='https://blog.kakaocdn.net/dn/rh73h/btrD8i3cILM/QY6KbMP0q28AAf1jEpNg40/img.png' %}
 
 사상에 의해 가상주소를 실주소로 변환하는 절차를 **동적 주소 변환 (Dynamic Address Translation, DAT)** 이라고 한다. 이를 이용하면 프로세스의 연속적인 가상주소가 실제 메모리에서도 연속적일 필요는 없다는 **인위적 연속성(contiguity)** 를 가지게 되므로, 사용자는 프로그램과 데이터의 위치를 염려할 필요가 없다.
-![](https://blog.kakaocdn.net/dn/nrAVJ/btrEaM4trsT/tGkuHpxWyvalykCkhcOcK0/img.png)
+
+{% include figure path='https://blog.kakaocdn.net/dn/nrAVJ/btrEaM4trsT/tGkuHpxWyvalykCkhcOcK0/img.png' %}
+
 ## 
 2. 블록 단위 주소 변환
 
@@ -34,16 +45,21 @@ title: "[운영체제] 7. 가상 메모리"
 가상 메모리를 고정 크기 블록, 페이지(page) 단위로 나누어 관리하는 기법이다. 가상주소 v는 페이지 번호 p 와 변위 d 의 순서쌍 v(p, d) 로 이루어진다.
 
 예를 들어 가상주소 v=(3, 8) 은 가상 메모리의 3번째 페이지에서 8바이트 떨어진 공간에 존재하는 위치를 나타낸다.
-![](https://blog.kakaocdn.net/dn/brkU86/btrEc4CXFle/ELqKjF16xwXD97byIeGssK/img.png)가상주소 v=(3, 8) 을 나타내는 예시
+
+{% include figure path='https://blog.kakaocdn.net/dn/brkU86/btrEc4CXFle/ELqKjF16xwXD97byIeGssK/img.png' caption='가상주소 v=(3, 8) 을 나타내는 예시' %}
 
 가상 주소를 실제 메모리에서도 참조하기 위해서는 메모리 영역도 가상 메모리와 동일하게 고정된 크기의 블록으로 나누어야 하며, 이 블록을 **페이지 프레임(page frame)** 이라고 부른다.
 
 페이지를 페이지 프레임에 적재하는 것은 비어있는 임의의 프레임에 적재하며, 이를 페이지 **사상표(mapping table)** 을 통해 찾을 수 있도록 한다.
 
 사상표를 직접 이용하여 동적 주소변환을 하는 것을 **직접 사상 방식**이라 한다.
+
+{% include figure path='' caption='' %}
+
 ![](https://blog.kakaocdn.net/dn/uPA2b/btrD9HbfTwT/GBT5jKpxyeaYe7Kg3wh7G1/img.png)직접 사상을 이용한 동적 주소 변환의 예시
 또한 연관기억장치(저장된 값을 이용하여 데이터를 엑세스 하는 고속 메모리장치) 에 연관 사상표를 저장하고 동적 주소 변환을 하는 **연관 사상 방식**이 있다.
-![](https://blog.kakaocdn.net/dn/DFIAL/btrEczjcbXW/EGeEGLwSGAmuk85OW3qdRK/img.png)연관 사상을 이용한 동적 주소 변환의 예시
+
+{% include figure path='https://blog.kakaocdn.net/dn/DFIAL/btrEczjcbXW/EGeEGLwSGAmuk85OW3qdRK/img.png' caption='연관 사상을 이용한 동적 주소 변환의 예시' %}
 
 일반적으로 최근에 참조 된 페이지는 연관 사상표에 기록해두고 사용하며, 참조된 지 오래 된 페이지를 사용할 때는 직접 사상을 이용하여 연관 사상표에 기록 후 참조하는 방식으로 혼용하여 사용한다.
 

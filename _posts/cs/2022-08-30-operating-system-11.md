@@ -1,8 +1,14 @@
 ---
 title: "[운영체제] 11. 운영체제 보안"
+tags: 
+    - Study
+    - OperationgSystem
+categories:
+    - CS
 ---
 
-![](https://blog.kakaocdn.net/dn/x5IMq/btrEVZgqrau/j2c009ZKykyHSlVwfKCNsK/img.png)
+{% include figure path='https://blog.kakaocdn.net/dn/v4Tnd/btrEGJZ3WQf/ZbaS4GDkoJlqOFICdzuQw0/img.png' %}
+
 ## 1. 보안의 개요
 
 ### 보호와 보안
