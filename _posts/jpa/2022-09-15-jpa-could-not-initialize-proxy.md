@@ -2,6 +2,7 @@
 title: "[JPA] could not initialize proxy - no Session"
 tags: 
     - JPA
+    - TroubleLog
 categories:
     - JPA
 ---
