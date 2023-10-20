@@ -9,6 +9,13 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
 
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
 // @font-face {
 //     font-family: 'GmarketSansMedium';
 //     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
@@ -40,9 +47,10 @@
 
 :root {
 
+    --main-font: 'Pretendard-Regular';
+
     /* Fonts */
-    //NanumSquareRound
-    --font-sans: "NanumSquareRound", "-apple-system", "BlinkMacSystemFont","Apple SD Gothic Neo", "Segoe UI", Sans-Serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    --font-sans: var(--main-font), "-apple-system", "BlinkMacSystemFont","Apple SD Gothic Neo", "Segoe UI", Sans-Serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     --font-serif: Georgia, Times, serif;
     --font-caption: SUITE-Regular, Times, serif;
     --font-mono: Menlo, Courier, monospace;
@@ -58,8 +66,3 @@
     font-family: 'D2Coding';
 }
 
-p {
-    font-family: var(--font-sans);
-    font-size: 18px;
-    font-weight: 300;
-}
