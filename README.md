@@ -1,4 +1,4 @@
-# [To Be Better Than Yesterday](https://june0619.github.io/)
+# [To Be Better Than Yesterday](https://jwjung.me)
 ```
 🚩 Github Blog Page
 ```
