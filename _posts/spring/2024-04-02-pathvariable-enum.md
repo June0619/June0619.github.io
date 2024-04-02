@@ -20,7 +20,6 @@ categories:
 2. 1번의 Enum 타입을 선택적으로 path variable 로 사용
 3. 없는 자료형의 경우 404 반환
 
-- Fruit
 ```java
 public enum Fruit {
     APPLE,
@@ -28,7 +27,6 @@ public enum Fruit {
 }
 ````
 
-- API Controller
 ```java
 @GetMapping("/{fruit}")
 public Fruit getFruits(@PathVariable Fruit fruit) {
@@ -46,7 +44,6 @@ public Fruit getFruits(@PathVariable Fruit fruit) {
 
 우선 `String` 을 `Fruit` 자료형으로 변경해주는 컨버터를 구현하여 작성하자.
 
-- StringToFruitConverter.java
 ```java
 import org.springframework.core.convert.converter.Converter;
 
@@ -60,7 +57,6 @@ public class StringToFruitConverter implements Converter<String, Fruit> {
 
 애노테이션 기반 스프링 설정파일을 사용한다면 다음과 같이 구현한 컨버터를 등록한다.
 
-- WebConfiguration.java
 ```java
 @Configuration
 public class WebConfiguration implements WebMvcConfigurer {
@@ -74,8 +70,8 @@ public class WebConfiguration implements WebMvcConfigurer {
 
 그러면 다음과 같이 호출이 가능해진다. '/apple', '/sweet-cherry'
 
-- 호출 결과
 ```text
+### 호출 결과
 GET http://localhost:8080/api/v1/fruits/sweet-cherry
 
 HTTP/1.1 200 
@@ -99,7 +95,6 @@ Response file saved.
 
 우선 Enum Class 의 `valueOf(String name)` 메소드 호출 중 자료형에 없는 name 값이 들어왔을 경우 `IllegalArgumentException` 이 발생하므로 해당 예외를 null 로 변환하여 반환한다.
 
-- convert 메소드
 ```java
     public Fruit convert(String source) {
         try {
@@ -112,7 +107,6 @@ Response file saved.
 
 이대로 null 을 반환하면 pathVariable 상 존재하는 값이 null 값으로 변환되어 `MissingPathVariableException` 예외가 발생하는데, 이는 해당 파라미터를 `Optional` 객체로 받아주는 것으로 해결할 수 있다.
 
-- 컨트롤러 수정
 ```java
 @RestController
 @RequestMapping("/api/v1/fruits")
