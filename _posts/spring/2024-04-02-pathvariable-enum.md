@@ -39,6 +39,8 @@ public Fruit getFruits(@PathVariable Fruit fruit) {
 
 직접 만든 TypeConvert 를 사용하여 위 문제들을 해결해보자.
 
+또한 예제는 PathVariable 을 대상으로 다루었지만, `@RequestParam` 애노테이션을 통해 들어오는 쿼리스트링 인자 또한 동일하게 적용된다.
+
 ## 2. Converter 작성 및 등록
 스프링에서 기본적으로 대부분의 자료는 Converter 를 등록하여 관리하지만, 직접 컨버터를 구현하여 등록할 시 기본 컨버터보다 높은 우선순위로 다루어진다.
 
