@@ -116,11 +116,11 @@ public class FruitController {
 
     @GetMapping("/{fruit}")
     public Fruit getFruits(@PathVariable Optional<Fruit> fruit) {
-        return fruit.orElseThrow(IllegalArgumentException::new);
+        return fruit.orElseThrow(EnumNotFoundException::new);
     }
 
     @ResponseStatus(HttpStatus.NOT_FOUND)
-    @ExceptionHandler(IllegalArgumentException.class)
+    @ExceptionHandler(EnumNotFoundException.class)
     public String handleException() {
         return "NOT FOUND PATH";
     }
