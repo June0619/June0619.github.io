@@ -32,7 +32,7 @@ const config = {
   deploymentBranch: 'gh-pages',
   onBrokenLinks: 'throw',
   
-  githubHost: 'github.com-personal',
+  githubHost: 'github.com',
   
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
