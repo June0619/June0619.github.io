@@ -10,8 +10,8 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
+  title: '🚀 To be better than yesterday',
+  tagline: '',
   favicon: 'img/favicon.ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
@@ -31,7 +31,9 @@ const config = {
   projectName: 'June0619.github.io', // Usually your repo name.
 
   onBrokenLinks: 'throw',
-
+  
+  githubHost: 'github.com-personal',
+  
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
@@ -83,9 +85,9 @@ const config = {
         respectPrefersColorScheme: true,
       },
       navbar: {
-        title: 'My Site',
+        title: 'Jiwoon\'s blog',
         logo: {
-          alt: 'My Site Logo',
+          alt: 'Jiwoon\'s blog Logo',
           src: 'img/logo.svg',
         },
         items: [
