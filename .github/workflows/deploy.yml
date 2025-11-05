@@ -1,0 +1,36 @@
+name: Deploy Docusaurus site to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main     # main 브랜치에 push/merge 될 때마다 실행
+
+permissions:
+  contents: write    # gh-pages 브랜치에 push 권한 필요
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout source
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0   # 전체 커밋 이력 필요 (Docusaurus deploy에서 사용)
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build website
+        run: npm run build
+
+      - name: Deploy to GitHub Pages
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          DEPLOYMENT_BRANCH: gh-pages
+        run: npm run deploy
