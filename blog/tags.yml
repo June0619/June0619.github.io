@@ -1,19 +1,49 @@
-facebook:
-  label: Facebook
-  permalink: /facebook
-  description: Facebook tag description
+java:
+  label: Java
+  permalink: /java
+  description: 실무 중심의 Java 개발, 언어 기능, 코드 품질, 객체지향 설계에 관한 글입니다.
 
-hello:
-  label: Hello
-  permalink: /hello
-  description: Hello tag description
+spring:
+  label: Spring
+  permalink: /spring
+  description: Spring Framework 및 Spring Boot 관련 아키텍처, 의존성 관리, Bean 설계 등을 다룹니다.
 
-docusaurus:
-  label: Docusaurus
-  permalink: /docusaurus
-  description: Docusaurus tag description
+database:
+  label: Database
+  permalink: /database
+  description: PostgreSQL, 인덱스 설계, 샤딩, 쿼리 최적화 등 데이터베이스 중심의 기술 내용을 다룹니다.
 
-hola:
-  label: Hola
-  permalink: /hola
-  description: Hola tag description
+msa:
+  label: MSA
+  permalink: /msa
+  description: 마이크로서비스 아키텍처 운영, 서비스 분리, 이벤트 기반 통신, DMS 이관 등의 경험을 정리합니다.
+
+infrastructure:
+  label: Infrastructure
+  permalink: /infrastructure
+  description: AWS, Terraform, Redis, Kafka 등 인프라 환경 구성과 운영 관련 내용을 다룹니다.
+
+testing:
+  label: Testing
+  permalink: /testing
+  description: Testcontainers, Flyway, 단위 및 통합 테스트 전략, 트랜잭션 테스트 환경 구성에 대한 글입니다.
+
+refactoring:
+  label: Refactoring
+  permalink: /refactoring
+  description: 레거시 전환, 코드 개선, 책임 분리, 서비스 리팩토링 사례를 다룹니다.
+
+architecture:
+  label: Architecture
+  permalink: /architecture
+  description: 시스템 설계, 트랜잭션 흐름, 도메인 분리, 이벤트 설계 등 전반적인 백엔드 구조를 설명합니다.
+
+devculture:
+  label: DevCulture
+  permalink: /devculture
+  description: 사내 개발 문화, 코드 리뷰, 표준 가이드, 버전 관리 정책 등 조직 차원의 개발 문화를 다룹니다.
+
+blog:
+  label: Blog
+  permalink: /blog
+  description: 기술 외에도 성장, 리더십, 개발자로서의 사고방식에 대한 에세이 형식의 글입니다.

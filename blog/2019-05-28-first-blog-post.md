@@ -1,8 +1,8 @@
 ---
 slug: first-blog-post
 title: First Blog Post
-authors: [slorber, yangshun]
-tags: [hola, docusaurus]
+authors: [June]
+tags: [java, spring]
 ---
 
 Lorem ipsum dolor sit amet...

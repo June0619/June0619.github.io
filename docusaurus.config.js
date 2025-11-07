@@ -2,13 +2,13 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: '🚀 To be better than yesterday',
-  tagline: '',
+  title: '🪶 To be better than yesterday',
+  tagline: 'Progress, not perfection.',
   favicon: 'img/favicon.ico',
   future: {
     v4: true,
   },
-  url: 'https://your-docusaurus-site.example.com',
+  url: 'https://june0619.github.io',
   baseUrl: '/',
   organizationName: 'June0619',
   projectName: 'June0619.github.io',
@@ -54,7 +54,7 @@ const config = {
         respectPrefersColorScheme: true,
       },
       navbar: {
-        title: 'Jiwoon\'s blog',
+        title: 'TBBY',
         logo: {
           alt: 'Jiwoon\'s blog Logo',
           src: 'img/logo.svg',
