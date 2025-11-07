@@ -1,25 +1,13 @@
-yangshun:
-  name: Yangshun Tay
-  title: Ex-Meta Staff Engineer, Co-founder GreatFrontEnd
-  url: https://linkedin.com/in/yangshun
-  image_url: https://github.com/yangshun.png
+June:
+  name: June
+  title: Senior Backend Engineer & Technical Architect
+  image_url: https://avatars.githubusercontent.com/u/000000?v=4 # (원하시면 직접 이미지 경로로 교체)
   page: true
+  description: >
+    Java와 Spring을 중심으로 백엔드 시스템을 설계하고 운영하는 개발자입니다.
+    PostgreSQL, Redis, Kafka 기반의 MSA 환경에서 레거시 시스템을 점진적으로 전환하며,
+    테스트 인프라(Flyway, Testcontainers)와 코드 품질, 이벤트 기반 아키텍처에 관심이 많습니다.
+    또한 사내 개발 문화, 코드 리뷰 표준, 객체지향적 설계 가이드를 정립하는 일에도 적극적으로 참여하고 있습니다.
   socials:
-    x: yangshunz
-    linkedin: yangshun
-    github: yangshun
-    newsletter: https://www.greatfrontend.com
-
-slorber:
-  name: Sébastien Lorber
-  title: Docusaurus maintainer
-  url: https://sebastienlorber.com
-  image_url: https://github.com/slorber.png
-  page:
-    # customize the url of the author page at /blog/authors/<permalink>
-    permalink: '/all-sebastien-lorber-articles'
-  socials:
-    x: sebastienlorber
-    linkedin: sebastienlorber
-    github: slorber
-    newsletter: https://thisweekinreact.com
+    github: June0619
+    # linkedin: (선택)
