@@ -1,7 +1,7 @@
 June:
   name: June
-  title: Senior Backend Engineer & Technical Architect
-  image_url: https://avatars.githubusercontent.com/u/000000?v=4 # (원하시면 직접 이미지 경로로 교체)
+  title: Backend Developer
+  image_url: https://avatars.githubusercontent.com/u/54339266?v=4
   page: true
   description: >
     Java와 Spring을 중심으로 백엔드 시스템을 설계하고 운영하는 개발자입니다.
@@ -10,4 +10,3 @@ June:
     또한 사내 개발 문화, 코드 리뷰 표준, 객체지향적 설계 가이드를 정립하는 일에도 적극적으로 참여하고 있습니다.
   socials:
     github: June0619
-    # linkedin: (선택)
