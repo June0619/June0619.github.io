@@ -4,6 +4,8 @@
 [Docusaurus](https://docusaurus.io/) 기반으로 구축된 정적 사이트이며,  
 손쉽게 개발 환경을 실행하거나 배포할 수 있습니다.
 
+[블로그 페이지로 연결 🔗](https://june0619.github.io)
+
 ---
 
 ## 설치 및 로컬 실행방법
