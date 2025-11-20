@@ -1,1 +1,0 @@
-"use strict";(globalThis.webpackChunkhello_site=globalThis.webpackChunkhello_site||[]).push([[67],{9187:s=>{s.exports=JSON.parse('{"tags":[{"label":"Study","permalink":"/docs/tags/study","count":1},{"label":"OperatingSystem","permalink":"/docs/tags/operating-system","count":1}]}')}}]);
