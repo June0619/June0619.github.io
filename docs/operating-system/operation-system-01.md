@@ -1,5 +1,5 @@
 ---
-title: "[운영체제] 1. 운영체제 개요"
+title: "1. 운영체제 개요"
 tags:
   - Study
   - OperatingSystem

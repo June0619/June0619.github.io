@@ -1,5 +1,5 @@
 ---
-title: "[운영체제] 2. 프로세스 개요"
+title: "2. 프로세스 개요"
 tags: 
   - Study
   - OperatingSystem
