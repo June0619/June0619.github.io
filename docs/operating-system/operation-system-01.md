@@ -25,6 +25,21 @@ categories:
 > 운영체제가 도입된 이후에는 이러한 자원 관리 및 분배를 OS가 담당함으로써  
 > 프로그램 개발의 단순화와 시스템 효율성이 크게 향상되었다.
 
+
+<figure style={{ textAlign: 'center' }}>
+  ![img2](./imgs/01_os_1.png)
+  <figcaption style={{ fontSize: '0.9rem', color: '#666' }}>
+    운영체제 도입 전
+  </figcaption>
+</figure>
+
+<figure style={{ textAlign: 'center' }}>
+  ![img2](./imgs/01_os_2.png)
+  <figcaption style={{ fontSize: '0.9rem', color: '#666' }}>
+    운영체제 도입 후
+  </figcaption>
+</figure>
+
 ---
 
 ## 2. 커널 (Kernel)
