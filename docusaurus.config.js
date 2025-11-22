@@ -83,11 +83,11 @@ const config = {
             items: [
               {
                 label: '블로그 소개',
-                to: '/about',
+                to: '/',
               },
               {
                 label: '개발자 프로필',
-                to: '/profile',
+                to: '/blog/authors/june',
               },
             ],
           },
@@ -96,7 +96,6 @@ const config = {
             items: [
               { label: '블로그 홈', to: '/blog' },
               { label: '태그 모음', to: '/blog/tags' },
-              { label: '카테고리(Docs)', to: '/docs' },
             ],
           },
           {

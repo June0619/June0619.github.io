@@ -1,0 +1,9 @@
+{
+  "label": "Spring Framework",
+  "position": 2,
+  "link": {
+    "slug": "/spring-framework", 
+    "type": "generated-index",
+    "description": "Spring Framework"
+  }
+}
