@@ -1,9 +1,10 @@
-import {themes as prismThemes} from 'prism-react-renderer';
+import { themes as prismThemes } from 'prism-react-renderer';
+
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: '🪶 To be better than yesterday',
-  tagline: 'Progress, not perfection.',
+  tagline: 'Progress, not perfection',
   favicon: 'img/favicon.ico',
   future: {
     v4: true,
@@ -47,7 +48,7 @@ const config = {
     ],
   ],
   themeConfig:
-  /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
+    /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       image: 'img/docusaurus-social-card.jpg',
       colorMode: {
@@ -62,11 +63,11 @@ const config = {
         items: [
           {
             type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
+            sidebarId: 'docsSidebar',
             position: 'left',
-            label: 'Tutorial',
+            label: 'Docs',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
+          { to: '/blog', label: 'Blog', position: 'left' },
           {
             href: 'https://github.com/June0619',
             label: 'GitHub',
@@ -78,42 +79,35 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
-            items: [
-            ],
-          },
-          {
-            title: 'Community',
+            title: 'About',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                label: '블로그 소개',
+                to: '/about',
               },
               {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
-                label: 'X',
-                href: 'https://x.com/docusaurus',
+                label: '개발자 프로필',
+                to: '/profile',
               },
             ],
           },
           {
-            title: 'More',
+            title: 'Contents',
             items: [
-              {
-                label: 'Blog',
-                to: '/blog',
-              },
-              {
-                label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
-              },
+              { label: '블로그 홈', to: '/blog' },
+              { label: '태그 모음', to: '/blog/tags' },
+              { label: '카테고리(Docs)', to: '/docs' },
             ],
           },
+          {
+            title: 'Links',
+            items: [
+              { label: 'GitHub', href: 'https://github.com/June0619' },
+            ],
+          }
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: 
+          `© ${new Date().getFullYear()} To be better than yesterday. All rights reserved.`,
       },
       prism: {
         theme: prismThemes.github,
@@ -121,5 +115,6 @@ const config = {
       },
     }),
 };
+
 
 export default config;

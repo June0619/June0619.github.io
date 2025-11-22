@@ -1,33 +1,47 @@
-/**
- * Any CSS included here will be global. The classic template
- * bundles Infima by default. Infima is a CSS framework designed to
- * work well for content-centric websites.
- */
-
-/* You can override the default Infima variables here. */
 :root {
   --ifm-font-family-base: 'Suit', sans-serif;
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
-  --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+
+  /* Primary: 따뜻한 파란색 계열 */
+  --ifm-color-primary: #6c8ebf;          
+  --ifm-color-primary-dark: #5c7ca6;
+  --ifm-color-primary-darker: #4e6b9a;
+  --ifm-color-primary-darkest: #3d557c;
+  --ifm-color-primary-light: #8aa9d3;
+  --ifm-color-primary-lighter: #a6c0e0;
+  --ifm-color-primary-lightest: #d6e3f3;
+
+  /* Background (화이트 + 블루 톤) */
+  --ifm-background-color: #f7f9fc;        
+  --ifm-background-surface-color: #ffffff;
+  --docusaurus-highlighted-code-line-bg: rgba(108, 142, 191, 0.12);
+
+  /* Hero 영역 */
+  --ifm-hero-background-color: #e9eef7;   
+  --ifm-hero-text-color: #23344d;         
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
-[data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+/* Blog headings 더 선명하게 */
+--ifm-heading-color: #1d2a3a;
+
+/* Hero 텍스트도 선명하게 보이도록 보강 */
+.hero__title, .hero__subtitle {
+  color: var(--ifm-hero-text-color) !important;
+}
+
+/* 카드 배경 */
+.card {
+  background: #ffffff;
+  border: 1px solid #e1e6ef;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #f0f4fa;
+}
+
+/* Hover 링크 색 */
+a:hover {
+  color: #4e6b9a;
 }
 
 html.plugin-blog.blog-post-page h1 {
@@ -36,4 +50,50 @@ html.plugin-blog.blog-post-page h1 {
 
 html.plugin-blog h2 {
     font-size: 1.5rem;
+}
+
+/* Dark mode – completely refined warm blue-gray theme */
+[data-theme='dark'] {
+  /* Primary (따뜻한 네이비 블루) */
+  --ifm-color-primary: #9ab7e0;
+  --ifm-color-primary-dark: #83a7e1;
+  --ifm-color-primary-darker: #7292c4;
+  --ifm-color-primary-darkest: #5b769d;
+  --ifm-color-primary-light: #b9cdef;
+  --ifm-color-primary-lighter: #d8e5fb;
+  --ifm-color-primary-lightest: #eaf1ff;
+
+  /* Base background (딥 블루-그레이) */
+  --ifm-background-color: #11161d;          /* 전체 배경 */
+  --ifm-background-surface-color: #1a2029;   /* 카드/Docs surface */
+  
+  /* Sidebar */
+  --ifm-menu-color-background-active: #1f2835;
+  --ifm-menu-color-background: #151b24;
+
+  /* Text 색상 */
+  --ifm-font-color-base: #d7dce6;
+  --ifm-heading-color: #e7ebf3;
+
+  /* Hero */
+  --ifm-hero-background-color: #1a2029;
+  --ifm-hero-text-color: #dfe6f1;
+
+  /* Code line highlight */
+  --docusaurus-highlighted-code-line-bg: rgba(154, 183, 224, 0.12);
+
+  /* Card */
+  --ifm-card-background-color: #1c232d;
+}
+
+/* Card 실제 div에 반영 */
+[data-theme='dark'] .card {
+  background: #1c232d;
+  border: 1px solid #2a3342;
+}
+
+/* 다크 모드 navBar */
+[data-theme='dark'] .navbar {
+  background-color: #1a2029;
+  border-bottom: 1px solid #2a3342;
 }

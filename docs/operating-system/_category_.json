@@ -1,7 +1,9 @@
 {
   "label": "[CS노트] - 운영체제",
   "position": 1,
+  
   "link": {
+    "slug": "/operating-system", 
     "type": "generated-index",
     "description": "방송통신대학 운영체제 수업의 강의 노트입니다."
   }
