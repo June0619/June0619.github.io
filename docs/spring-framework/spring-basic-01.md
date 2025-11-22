@@ -1,5 +1,5 @@
 ---
-title: "[Spring] 스프링 기본 1 - DIP, OCP 원칙과 스프링 컨테이너"
+title: "1. DIP, OCP 원칙과 스프링 컨테이너"
 tags: 
     - Study
     - Spring
@@ -7,23 +7,18 @@ categories:
     - Spring
 ---
 
-> 💡Reference [[외부 링크]'스프링 핵심원리 - 기본편'](https://inf.run/n6jw)  
-> 1. **스프링 기본 1 - DIP, OCP 원칙과 스프링 컨테이너**  
-> 2. [스프링 기본 2 - 싱글톤 패턴과 싱글톤 컨테이너](../spring-기본-2/)  
-> 3. [스프링 기본 3 - 빈 스코프와 생명주기](../spring-기본-3)
-
 ## 1. 개요
 데이터베이스가 정해지지 않아서 임시 메모리 저장소를 구현해서 개발하던 중, DB가 확정되고 JPA로 레포지터리 레이어를 구현한다고 가정한다. DI 컨테이너, 혹은 스프링 컨테이너에 대해 공부하기 전에는 의존관계를 직접 구현체를 설정하여 지정해 주었지만, 이는 SOLID 5원칙 중 DIP, OCP에 위배되는 방식이다. 그렇다면 객체지향적인 설계를 위해서는 어떻게 해야 할까?
 
 <figure style={{ textAlign: 'center' }}>
-  ![img](../../mig_imgs/ghost_images/2023/01/image-1.png)
+  ![img](../mig_imgs/ghost_images/2023/01/image-1.png)
   <figcaption style={{ fontSize: '0.9rem', color: '#666' }}>
     변경 전
   </figcaption>
 </figure>
 
 <figure style={{ textAlign: 'center' }}>
-  ![img](../../mig_imgs/ghost_images/2023/01/image-2.png)
+  ![img](../mig_imgs/ghost_images/2023/01/image-2.png)
   <figcaption style={{ fontSize: '0.9rem', color: '#666' }}>
     변경 후
   </figcaption>
@@ -32,7 +27,7 @@ categories:
 ## 2. 스프링이 없다고 가정하면
 먼저 우리가 최종적으로 성공해야 하는 테스트 코드를 먼저 작성해보자.
 
-```java
+```java title="MemberServiceImplTest.java"
 class MemberServiceImplTest {
 
     MemberService memberService = new MemberServiceImpl();
@@ -119,7 +114,7 @@ void beforeEach() {
 이 구조를 IoC(Inversion of Control), DI 컨테이너라고 한다.
 
 <figure style={{ textAlign: 'center' }}>
-  ![img](../../mig_imgs/ghost_images/2023/01/image-3.png)
+  ![img](../mig_imgs/ghost_images/2023/01/image-3.png)
   <figcaption style={{ fontSize: '0.9rem', color: '#666' }}>
     DI 컨테이너
   </figcaption>
@@ -174,7 +169,7 @@ public class MemberAutoConfig {}
 ```
 
 <figure style={{ textAlign: 'center' }}>
-  ![img](../../mig_imgs/ghost_images/2023/01/image-7.png)
+  ![img](../mig_imgs/ghost_images/2023/01/image-7.png)
   <figcaption style={{ fontSize: '0.9rem', color: '#666' }}>
     컴포넌트 스캔 결과
   </figcaption>
@@ -215,3 +210,5 @@ public class MemberServiceImpl implements MemberService {
 
 > 이 시리즈의 모든 포스팅은 직접 수업과 교재를 통해 학습한 내용을 토대로  
 > 손으로 정리한 후, **AI를 이용해 구조 정리와 맞춤법만 다듬은 자료**입니다.
+
+> 💡Reference [[외부 링크]'스프링 핵심원리 - 기본편'](https://inf.run/n6jw)

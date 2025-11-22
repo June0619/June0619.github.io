@@ -51,6 +51,11 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       image: 'img/docusaurus-social-card.jpg',
+      docs: {
+        sidebar: {
+          hideable: true,
+        },
+      },
       colorMode: {
         respectPrefersColorScheme: true,
       },
@@ -111,6 +116,7 @@ const config = {
       prism: {
         theme: prismThemes.github,
         darkTheme: prismThemes.dracula,
+        additionalLanguages: ['java'],
       },
     }),
 };

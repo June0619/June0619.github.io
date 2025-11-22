@@ -1,9 +1,0 @@
-{
-  "label": "Spring Basic",
-  "position": 2,
-  "link": {
-    "slug": "/spring-basic",
-    "type": "generated-index",
-    "description": "Spring Framework 기본 개념과 원리에 대한 정리입니다."
-  }
-}

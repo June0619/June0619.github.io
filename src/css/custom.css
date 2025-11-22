@@ -97,3 +97,13 @@ html.plugin-blog h2 {
   background-color: #1a2029;
   border-bottom: 1px solid #2a3342;
 }
+
+/* depth 2 (하위 카테고리) */
+.theme-doc-sidebar-menu.menu__list .menu__list .menu__link {
+  font-size: 0.9rem;
+}
+
+/* depth 3 이하 (더 깊은 카테고리) */
+.theme-doc-sidebar-menu.menu__list .menu__list .menu__list .menu__link {
+  font-size: 0.85rem;
+}
