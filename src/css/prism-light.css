@@ -1,0 +1,63 @@
+/* ===========================
+   PRISM - LIGHT THEME (Blue)
+   =========================== */
+
+:root {
+  --prism-bg: #f8fafc;
+  --prism-border: #e0e7ff;
+
+  --prism-string: #0077cc;
+  --prism-number: #5c6ac4;
+  --prism-keyword: #0055aa;
+  --prism-comment: #7f8c8d;
+  --prism-function: #2a6f97;
+  --prism-class: #0b7285;
+  --prism-annotation: #c92a2a; /* Light theme annotation */
+  --prism-operator: #495057;
+  --prism-variable: #1f2d3d;
+}
+
+html[data-theme="light"] .prism-code {
+  background: var(--prism-bg) !important;
+  border-radius: 10px;
+  border: 1px solid var(--prism-border);
+  padding: 1.2rem;
+}
+
+/* tokens */
+html[data-theme="light"] .token.string {
+  color: var(--prism-string);
+  font-weight: 500;
+}
+
+html[data-theme="light"] .token.number {
+  color: var(--prism-number);
+}
+
+html[data-theme="light"] .token.keyword {
+  color: var(--prism-keyword);
+  font-weight: 600;
+}
+
+html[data-theme="light"] .token.comment {
+  color: var(--prism-comment);
+  font-style: italic;
+}
+
+html[data-theme="light"] .token.function {
+  color: var(--prism-function);
+  font-weight: 600;
+}
+
+html[data-theme="light"] .token.class-name {
+  color: var(--prism-class);
+}
+
+/* ★ Annotation 강조 */
+html[data-theme="light"] .token.annotation,
+html[data-theme="light"] .token.keyword[class*="annotation"],
+html[data-theme="light"] .token.punctuation.annotation {
+  color: var(--prism-annotation) !important;
+  font-weight: 600;
+}
+

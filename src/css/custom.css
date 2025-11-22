@@ -1,3 +1,7 @@
+/* Prism 테마 분리 import */
+@import './prism-light.css';
+@import './prism-dark.css';
+
 :root {
   --ifm-font-family-base: 'Suit', sans-serif;
 
@@ -17,7 +21,7 @@
 
   /* Hero 영역 */
   --ifm-hero-background-color: #e9eef7;   
-  --ifm-hero-text-color: #23344d;         
+  --ifm-hero-text-color: #23344d;      
 }
 
 /* Blog headings 더 선명하게 */
@@ -107,3 +111,18 @@ html.plugin-blog h2 {
 .theme-doc-sidebar-menu.menu__list .menu__list .menu__list .menu__link {
   font-size: 0.85rem;
 }
+
+/* 코드블록 컨테이너 박스 */
+pre {
+  padding: 1.2rem;
+  border: 1px solid #e5e8eb;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+}
+
+/* Dark mode */
+[data-theme='dark'] pre {
+  background: #1d1f23;
+  border: 1px solid #2c2f36;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+}
+

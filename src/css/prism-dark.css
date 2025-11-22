@@ -1,0 +1,71 @@
+/* ===========================
+   PRISM - DARK THEME (Blue Deep)
+   =========================== */
+
+[data-theme="dark"] {
+  --prism-bg-dark: #0f1a27;
+  --prism-border-dark: #1c2a38;
+
+  --prism-string-dark: #89ddff;
+  --prism-number-dark: #c792ea;
+  --prism-keyword-dark: #82aaff;
+  --prism-comment-dark: #546e7a;
+  --prism-function-dark: #c3e88d;
+  --prism-class-dark: #f78c6c;
+  --prism-annotation-dark: #ff5370; /* Dark theme annotation */
+  --prism-operator-dark: #cfd8dc;
+  --prism-variable-dark: #e0e0e0;
+}
+
+html[data-theme="dark"] .prism-code {
+  background: var(--prism-bg-dark) !important;
+  border-radius: 10px;
+  border: 1px solid var(--prism-border-dark);
+  padding: 1.2rem;
+}
+
+/* tokens */
+html[data-theme="dark"] .token.string {
+  color: var(--prism-string-dark);
+}
+
+html[data-theme="dark"] .token.number {
+  color: var(--prism-number-dark);
+}
+
+html[data-theme="dark"] .token.keyword {
+  color: var(--prism-keyword-dark);
+  font-weight: 600;
+}
+
+html[data-theme="dark"] .token.comment {
+  color: var(--prism-comment-dark);
+  font-style: italic;
+}
+
+html[data-theme="dark"] .token.function {
+  color: var(--prism-function-dark);
+  font-weight: 600;
+}
+
+html[data-theme="dark"] .token.class-name {
+  color: var(--prism-class-dark);
+  font-weight: bold;
+}
+
+/* ★ Annotation 강조 */
+html[data-theme="dark"] .token.annotation,
+html[data-theme="dark"] .token.keyword[class*="annotation"],
+html[data-theme="dark"] .token.punctuation.annotation {
+  color: var(--prism-annotation-dark) !important;
+  font-weight: 600;
+}
+
+html[data-theme="dark"] .token.operator {
+  color: var(--prism-operator-dark);
+}
+
+html[data-theme="dark"] .token.variable,
+html[data-theme="dark"] .token.property {
+  color: var(--prism-variable-dark);
+}
