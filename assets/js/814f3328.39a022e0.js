@@ -1,1 +1,0 @@
-"use strict";(globalThis.webpackChunkhello_site=globalThis.webpackChunkhello_site||[]).push([[472],{5513:e=>{e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"\ube14\ub85c\uadf8 \uac1c\ud3b8\uc744 \ub2e4\uc2dc \uc2dc\uc791\ud558\uac8c \ub41c \uc774\uc720","permalink":"/blog/first-blog-post","unlisted":false,"date":"2025-11-18T00:00:00.000Z"}]}')}}]);
