@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkhello_site=globalThis.webpackChunkhello_site||[]).push([[7049],{1117:e=>{e.exports=JSON.parse('{"authors":[{"name":"June","title":"Backend Developer","socials":{"github":"https://github.com/June0619"},"imageURL":"https://avatars.githubusercontent.com/u/54339266?v=4","key":"June","page":null,"count":1}]}')}}]);
