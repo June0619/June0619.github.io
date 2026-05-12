@@ -1,9 +1,9 @@
 {
-  "label": "[Note] 스프링 기본편",
+  "label": "Spring Framework",
   "position": 2,
   "link": {
-    "slug": "/spring-basic/", 
+    "slug": "/spring-framework/", 
     "type": "generated-index",
-    "description": "Spring Basic"
+    "description": "Spring Framework"
   }
 }

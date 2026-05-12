@@ -114,15 +114,14 @@ html.plugin-blog h2 {
 
 /* 코드블록 컨테이너 박스 */
 pre {
-  padding: 1.2rem;
-  border: 1px solid #e5e8eb;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+  background: #ffffff !important;
+  border: 1px solid #e1e4e8 !important;
+  box-shadow: none !important;
 }
 
-/* Dark mode */
 [data-theme='dark'] pre {
-  background: #1d1f23;
-  border: 1px solid #2c2f36;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  background: #2b2b2b !important;
+  border: 1px solid #3c3f41 !important;
+  box-shadow: none !important;
 }
 
