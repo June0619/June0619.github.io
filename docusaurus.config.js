@@ -49,6 +49,25 @@ const config = {
       }),
     ],
   ],
+  plugins: [
+    [
+      '@docusaurus/plugin-content-blog',
+      {
+        id: 'til',
+        routeBasePath: 'til',
+        path: './til',
+        blogTitle: 'TIL',
+        blogDescription: 'Today I Learned',
+        blogSidebarTitle: 'TIL 목록',
+        blogSidebarCount: 'ALL',
+        postsPerPage: 20,
+        showReadingTime: false,
+        onInlineTags: 'warn',
+        onInlineAuthors: 'warn',
+        onUntruncatedBlogPosts: 'ignore',
+      },
+    ],
+  ],
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
@@ -75,6 +94,7 @@ const config = {
             label: 'Docs',
           },
           { to: '/blog', label: 'Blog', position: 'left' },
+          { to: '/til', label: 'TIL', position: 'left' },
           {
             href: 'https://github.com/June0619',
             label: 'GitHub',
@@ -102,6 +122,7 @@ const config = {
             title: 'Contents',
             items: [
               { label: '블로그 홈', to: '/blog' },
+              { label: 'TIL', to: '/til' },
               { label: '태그 모음', to: '/blog/tags' },
             ],
           },
