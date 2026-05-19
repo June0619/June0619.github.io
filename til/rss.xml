@@ -4,10 +4,39 @@
         <title>🪶 To be better than yesterday Blog</title>
         <link>https://june0619.github.io/til</link>
         <description>🪶 To be better than yesterday Blog</description>
-        <lastBuildDate>Wed, 13 May 2026 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 19 May 2026 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[2026-05-19]]></title>
+            <link>https://june0619.github.io/til/2026/05/19/</link>
+            <guid>https://june0619.github.io/til/2026/05/19/</guid>
+            <pubDate>Tue, 19 May 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[Circuit Breaker 의 전파]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="circuit-breaker-의-전파">Circuit Breaker 의 전파<a href="https://june0619.github.io/til/2026/05/19/#circuit-breaker-%EC%9D%98-%EC%A0%84%ED%8C%8C" class="hash-link" aria-label="Direct link to Circuit Breaker 의 전파" title="Direct link to Circuit Breaker 의 전파" translate="no">​</a></h2>
+<p>Circuit Breaker 의 경우 MSA 환경에서 특정 서비스만 서킷브레이커가 동작할 수 있다. 이 경우 사용자 경험측면에서 특정 유저만 장애를 경험하는 등 신뢰도 하락으로 이어진다. 따라서 Redis, Kafka, Service Mesh 등 가용한 인프라를 활용하여 해당 상황을 차단하는게 좋다.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="fallback">Fallback<a href="https://june0619.github.io/til/2026/05/19/#fallback" class="hash-link" aria-label="Direct link to Fallback" title="Direct link to Fallback" translate="no">​</a></h2>
+<ul>
+<li class="">장애 상황 발생 시 후속처리 방향<!-- -->
+<ol>
+<li class="">단순 실패 반환: 약속된 실패 페이로드 반환</li>
+<li class="">재시도 큐에 저장: 서비스 장애가 일시적인 경우 재시도를 통해 복구</li>
+<li class="">대체 동작 수행: Kakao 대신 SMS 발송 등</li>
+<li class="">예외 변환: 한번 추상화 된 예외로 감싸 전파 (예: <code>NetworkException</code> -&gt; <code>PaymentFailedException</code>)</li>
+</ol>
+</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="graceful-degradation">Graceful Degradation<a href="https://june0619.github.io/til/2026/05/19/#graceful-degradation" class="hash-link" aria-label="Direct link to Graceful Degradation" title="Direct link to Graceful Degradation" translate="no">​</a></h2>
+<ul>
+<li class="">시스템 일부 기능이 장애로 인해 중단 되더라도 나머지 기능은 동작하도록 보호하는 것<!-- -->
+<ul>
+<li class="">단순 회로차단이나 장애복구 로직 외에 메트릭 수집 등 복잡한 동작이 요구된다.</li>
+</ul>
+</li>
+</ul>]]></content:encoded>
+            <category>resilience</category>
+        </item>
         <item>
             <title><![CDATA[2026-05-13]]></title>
             <link>https://june0619.github.io/til/2026/05/13/</link>
