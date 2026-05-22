@@ -4,10 +4,24 @@
         <title>🪶 To be better than yesterday Blog</title>
         <link>https://june0619.github.io/til</link>
         <description>🪶 To be better than yesterday Blog</description>
-        <lastBuildDate>Wed, 20 May 2026 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 22 May 2026 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[2026-05-22]]></title>
+            <link>https://june0619.github.io/til/2026/05/22/</link>
+            <guid>https://june0619.github.io/til/2026/05/22/</guid>
+            <pubDate>Fri, 22 May 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[NonNull Api]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="nonnull-api">NonNull Api<a href="https://june0619.github.io/til/2026/05/22/#nonnull-api" class="hash-link" aria-label="Direct link to NonNull Api" title="Direct link to NonNull Api" translate="no">​</a></h2>
+<ul>
+<li class="">Spring 6까지 java 에서 취약한 null check 를 위해 @NonNull 등 애노테이션을 채용하여 컴파일 시점의 null-safety 를 올리려는 노력이 있었음.</li>
+<li class="">com.github.spotbugs plugin 을 이용하면 컴파일 시점에 해당 null check 를 사전에 할 수 있음</li>
+<li class="">Spring 7 부터는 <code>JSpecify</code> 라는 벤더의 애노테이션으로 많이 변경됐음</li>
+</ul>]]></content:encoded>
+            <category>resilience</category>
+        </item>
         <item>
             <title><![CDATA[2026-05-20]]></title>
             <link>https://june0619.github.io/til/2026/05/20/</link>
