@@ -4,10 +4,36 @@
         <title>🪶 To be better than yesterday Blog</title>
         <link>https://june0619.github.io/til</link>
         <description>🪶 To be better than yesterday Blog</description>
-        <lastBuildDate>Fri, 22 May 2026 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 08 Jun 2026 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[2026-06-08]]></title>
+            <link>https://june0619.github.io/til/2026/06/08/</link>
+            <guid>https://june0619.github.io/til/2026/06/08/</guid>
+            <pubDate>Mon, 08 Jun 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[Splearn]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="splearn">Splearn<a href="https://june0619.github.io/til/2026/06/08/#splearn" class="hash-link" aria-label="Direct link to Splearn" title="Direct link to Splearn" translate="no">​</a></h2>
+<ul>
+<li class=""><code>Member</code> 도메인 안에 <code>PasswordHash</code> 를 만드는 등 기술적인 행위가 들어가도 되는지?<!-- -->
+<ul>
+<li class="">분리하는게 낫다<!-- -->
+<ul>
+<li class="">encode / isMatch 등의 행위는 기술에 의해 언제든지 변경 될 수 있음</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="">생성자 보다 정적 팩토리 메소드가 좋은 점<!-- -->
+<ul>
+<li class="">아무래도 이름을 줄 수 있으므로 생성자보다는 더욱 명시적</li>
+</ul>
+</li>
+<li class="">반복되는 텍스트 픽스쳐는 사전에 분리해두는게 도메인 스펙이 변경되는 수고를 줄일 수 있다.</li>
+</ul>]]></content:encoded>
+            <category>architecture</category>
+        </item>
         <item>
             <title><![CDATA[2026-05-22]]></title>
             <link>https://june0619.github.io/til/2026/05/22/</link>

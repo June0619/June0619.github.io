@@ -2,11 +2,40 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://june0619.github.io/til</id>
     <title>🪶 To be better than yesterday Blog</title>
-    <updated>2026-05-22T00:00:00.000Z</updated>
+    <updated>2026-06-08T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://june0619.github.io/til"/>
     <subtitle>🪶 To be better than yesterday Blog</subtitle>
     <icon>https://june0619.github.io/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[2026-06-08]]></title>
+        <id>https://june0619.github.io/til/2026/06/08/</id>
+        <link href="https://june0619.github.io/til/2026/06/08/"/>
+        <updated>2026-06-08T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Splearn]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="splearn">Splearn<a href="https://june0619.github.io/til/2026/06/08/#splearn" class="hash-link" aria-label="Direct link to Splearn" title="Direct link to Splearn" translate="no">​</a></h2>
+<ul>
+<li class=""><code>Member</code> 도메인 안에 <code>PasswordHash</code> 를 만드는 등 기술적인 행위가 들어가도 되는지?<!-- -->
+<ul>
+<li class="">분리하는게 낫다<!-- -->
+<ul>
+<li class="">encode / isMatch 등의 행위는 기술에 의해 언제든지 변경 될 수 있음</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="">생성자 보다 정적 팩토리 메소드가 좋은 점<!-- -->
+<ul>
+<li class="">아무래도 이름을 줄 수 있으므로 생성자보다는 더욱 명시적</li>
+</ul>
+</li>
+<li class="">반복되는 텍스트 픽스쳐는 사전에 분리해두는게 도메인 스펙이 변경되는 수고를 줄일 수 있다.</li>
+</ul>]]></content>
+        <author>
+            <name>June</name>
+        </author>
+        <category label="architecture" term="architecture"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[2026-05-22]]></title>
         <id>https://june0619.github.io/til/2026/05/22/</id>
