@@ -4,10 +4,32 @@
         <title>🪶 To be better than yesterday Blog</title>
         <link>https://june0619.github.io/til</link>
         <description>🪶 To be better than yesterday Blog</description>
-        <lastBuildDate>Mon, 08 Jun 2026 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 08 Jul 2026 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[2026-07-08]]></title>
+            <link>https://june0619.github.io/til/2026/07/08/</link>
+            <guid>https://june0619.github.io/til/2026/07/08/</guid>
+            <pubDate>Wed, 08 Jul 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[Splearn]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="splearn">Splearn<a href="https://june0619.github.io/til/2026/07/08/#splearn" class="hash-link" aria-label="Direct link to Splearn" title="Direct link to Splearn" translate="no">​</a></h2>
+<ul>
+<li class="">
+<p>Java 기본 문법상 파라미터가 많은 생성자에서 실수를 줄이기 위한 방법</p>
+<ol>
+<li class="">IDE 지원 기능: 항상 보장되는 것이 아님</li>
+<li class="">Builder: Null Safety 하지 않음</li>
+<li class="">생성을 위한 Record 도입</li>
+</ol>
+</li>
+<li class="">
+<p>속성에 대해 반복되는 작업이 예상되는 경우 ValueObject 로 응집도를 높이자</p>
+</li>
+</ul>]]></content:encoded>
+            <category>architecture</category>
+        </item>
         <item>
             <title><![CDATA[2026-06-08]]></title>
             <link>https://june0619.github.io/til/2026/06/08/</link>
