@@ -2,11 +2,110 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://june0619.github.io/til</id>
     <title>🪶 To be better than yesterday Blog</title>
-    <updated>2026-07-08T00:00:00.000Z</updated>
+    <updated>2026-07-15T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://june0619.github.io/til"/>
     <subtitle>🪶 To be better than yesterday Blog</subtitle>
     <icon>https://june0619.github.io/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[2026-07-15]]></title>
+        <id>https://june0619.github.io/til/2026/07/15/</id>
+        <link href="https://june0619.github.io/til/2026/07/15/"/>
+        <updated>2026-07-15T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[헥사고날에 대한 사실과 오해]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="헥사고날에-대한-사실과-오해">헥사고날에 대한 사실과 오해<a href="https://june0619.github.io/til/2026/07/15/#%ED%97%A5%EC%82%AC%EA%B3%A0%EB%82%A0%EC%97%90-%EB%8C%80%ED%95%9C-%EC%82%AC%EC%8B%A4%EA%B3%BC-%EC%98%A4%ED%95%B4" class="hash-link" aria-label="Direct link to 헥사고날에 대한 사실과 오해" title="Direct link to 헥사고날에 대한 사실과 오해" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="계층형-아키텍처">계층형 아키텍처<a href="https://june0619.github.io/til/2026/07/15/#%EA%B3%84%EC%B8%B5%ED%98%95-%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98" class="hash-link" aria-label="Direct link to 계층형 아키텍처" title="Direct link to 계층형 아키텍처" translate="no">​</a></h3>
+<ul>
+<li class="">서브 시스템을 계층(layers)으로 구조화 하는 스타일</li>
+<li class="">상위 계층이 하위 계층을 사용하는 단방향 하향식 스타일</li>
+<li class="">어떤 레이어의 변경이 다른 레이어 컴포넌트에게 되도록 영향을 주지 않음</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="3계층-아키텍처">3계층 아키텍처<a href="https://june0619.github.io/til/2026/07/15/#3%EA%B3%84%EC%B8%B5-%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98" class="hash-link" aria-label="Direct link to 3계층 아키텍처" title="Direct link to 3계층 아키텍처" translate="no">​</a></h3>
+<ul>
+<li class="">전형적으로 사용하던 계층 이름<!-- -->
+<ul>
+<li class=""><code>UI</code> -&gt; <code>Domain</code> -&gt; <code>Data</code></li>
+<li class=""><code>Presentation</code> -&gt; <code>Business Logic</code> -&gt; <code>Persistence</code>
+<ul>
+<li class="">여기서 <code>Business Logic</code> 레이어를 쪼개서 <code>Application Service</code> / <code>Domain</code> 으로 나눔</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="헥사고날-아키텍처">헥사고날 아키텍처<a href="https://june0619.github.io/til/2026/07/15/#%ED%97%A5%EC%82%AC%EA%B3%A0%EB%82%A0-%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98" class="hash-link" aria-label="Direct link to 헥사고날 아키텍처" title="Direct link to 헥사고날 아키텍처" translate="no">​</a></h3>
+<ul>
+<li class="">계층형 아키텍처처럼 단방향 비대칭이 아니라 대칭형 아키텍처</li>
+<li class="">애플리케이션 내부와 외부 세계로 나눔</li>
+<li class="">육각형이나 6개의 면 이런게 중요한게 아님<!-- -->
+<ul>
+<li class="">대칭성을 강조하기 위해 육각형을 채용했을 뿐</li>
+</ul>
+</li>
+<li class="">헥사곤의 내부<!-- -->
+<ul>
+<li class="">잘 변하지 않는 도메인 로직<!-- -->
+<ul>
+<li class="">트랜잭션 스크립트로 구현되어 있던</li>
+<li class="">애플리케이션 서비스와 도메인 모델 로직으로 나누어져있던</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="">헥사곤의 외부<!-- -->
+<ul>
+<li class="">헥사곤과 상호작용하는 모든것 (Actor)</li>
+<li class="">사용자, 브라우저, CLI, 기계, 다른 시스템</li>
+<li class="">운영 환경, DB, 메시징</li>
+<li class="">테스트</li>
+</ul>
+</li>
+<li class="">헥사고날 아키텍처의 특징과 혜택<!-- -->
+<ul>
+<li class="">테스팅 -&gt; 운영 시스템에 연결되지 않고 애플리케이션 테스트가 가능해야 함</li>
+<li class="">애플리케이션과 상호작용하는 액터가 바뀌더라도 빌드하지 않고 테스트</li>
+<li class="">UI 디테일이나 기술의 정보가 도메인 로직 안으로 노출되지 않도록 보호함 (반대도)</li>
+<li class="">외부의 연결이 다른것으로 변경 가능</li>
+</ul>
+</li>
+</ul>]]></content>
+        <author>
+            <name>June</name>
+        </author>
+        <category label="architecture" term="architecture"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[2026-07-09]]></title>
+        <id>https://june0619.github.io/til/2026/07/09/</id>
+        <link href="https://june0619.github.io/til/2026/07/09/"/>
+        <updated>2026-07-09T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Splearn]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="splearn">Splearn<a href="https://june0619.github.io/til/2026/07/09/#splearn" class="hash-link" aria-label="Direct link to Splearn" title="Direct link to Splearn" translate="no">​</a></h2>
+<ul>
+<li class="">
+<p>도메인 모델 패턴의 두가지 스타일</p>
+<ul>
+<li class="">단순 도메인 모델 (Simple Domain Model): DB 설계와 유사한 도메인 모델</li>
+<li class="">풍성한 도메인 모델 (Rich Domain Model): 상속이나 전략, GoF 디자인 패턴, 연관 관계</li>
+</ul>
+</li>
+<li class="">
+<p>도메인 로직의 API 개발</p>
+<ul>
+<li class="">트랜잭션 스크립트처럼 작업 단위 절차형 API를 만들기 어렵다.</li>
+<li class="">도메인 로직의 명확한 작업 단위 API를 제공하는 애플리케이션 서비스가 필요<!-- -->
+<ul>
+<li class="">도메인 로직이 애플리케이션 서비스를 제공하도록 하는 계층을 Domain Facade 라고도 한다.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>]]></content>
+        <author>
+            <name>June</name>
+        </author>
+        <category label="architecture" term="architecture"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[2026-07-08]]></title>
         <id>https://june0619.github.io/til/2026/07/08/</id>

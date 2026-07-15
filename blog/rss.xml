@@ -4,10 +4,17 @@
         <title>🪶 To be better than yesterday Blog</title>
         <link>https://june0619.github.io/blog</link>
         <description>🪶 To be better than yesterday Blog</description>
-        <lastBuildDate>Tue, 18 Nov 2025 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 09 Jul 2026 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[마침표를 찍는 용기]]></title>
+            <link>https://june0619.github.io/blog/마침표를 찍는 용기</link>
+            <guid>https://june0619.github.io/blog/마침표를 찍는 용기</guid>
+            <pubDate>Thu, 09 Jul 2026 00:00:00 GMT</pubDate>
+            <category>Blog</category>
+        </item>
         <item>
             <title><![CDATA[블로그 개편을 다시 시작하게 된 이유]]></title>
             <link>https://june0619.github.io/blog/first-blog-post</link>
